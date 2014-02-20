@@ -1,0 +1,5138 @@
+4
+backpack 2
+backpackCost 8
+finalGoal 10
+score 0
+venc 34 16 0 6 2
+ring 6 4
+health 2
+strength 2
+agility 1
+intelect 1
+ring 5 4
+health 1
+strength 1
+agility 2
+intelect 1
+6 4 3 2 0 0 0 0 0
+60 20
+0 56 1
+3 0 0
+0 52 1
+3 0 0
+0 54 1
+3 0 0
+0 50 1
+3 0 0
+0 46 1
+3 0 0
+0 51 1
+3 0 1
+Friend 5 0 0 0 10
+crossbow 5 3
+strength 1
+agility 3
+range 1
+amulet 3 3
+health 1
+agility 0
+intelect 2
+ring 6 4
+health 2
+strength 1
+agility 2
+intelect 1
+axe 3 2
+strength 2
+agility 1
+axe 3 2
+strength 3
+agility 0
+amulet 2 3
+health 1
+agility 1
+intelect 0
+wand 3 3
+health 1
+intelect 1
+range 1
+ring 7 4
+health 2
+strength 1
+agility 2
+intelect 2
+wand 4 3
+health 0
+intelect 3
+range 1
+sword 4 2
+strength 3
+agility 1
+0 42 1
+4 0 0
+0 26 1
+5 0 0
+0 49 1
+3 0 0
+0 34 1
+5 0 0
+0 27 1
+5 0 0
+0 32 1
+5 0 0
+0 32 1
+5 0 0
+0 26 1
+5 1 0
+elemental 13 0 0 0 1
+sword 2 2
+strength 1
+agility 1
+8 3 4 8 0 0 0 0 1
+0 22 1
+5 0 0
+0 27 1
+5 0 0
+0 17 1
+5 0 0
+0 16 1
+5 0 0
+0 28 1
+5 0 0
+0 34 1
+5 0 0
+0 27 1
+5 0 0
+0 28 1
+5 0 0
+0 34 1
+5 0 0
+0 39 1
+4 0 0
+0 39 1
+4 0 0
+0 46 1
+3 0 0
+0 33 1
+5 0 0
+0 38 1
+4 0 0
+0 47 1
+3 0 0
+0 44 1
+4 1 0
+goblin 29 0 0 0 1
+wand 5 3
+health 0
+intelect 4
+range 1
+3 1 0 0 0 0 0 0 0
+0 29 1
+5 0 0
+0 35 1
+5 0 0
+0 31 1
+5 0 0
+1 36 1
+4 0 0
+1 38 1
+4 0 0
+1 32 1
+5 0 0
+1 34 1
+5 0 0
+1 24 1
+5 0 0
+1 17 1
+5 0 0
+1 33 1
+5 0 0
+1 29 2
+8 0 0
+5 0 0
+1 33 1
+5 0 0
+1 34 1
+5 0 0
+0 48 1
+3 0 0
+0 41 1
+4 0 0
+0 50 1
+3 1 0
+elemental 45 0 0 0 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+9 2 4 7 0 0 0 0 1
+0 47 1
+3 0 0
+0 53 1
+3 0 0
+0 69 1
+2 0 0
+0 56 1
+3 0 0
+0 69 1
+2 1 0
+ogre 50 0 0 0 1
+wand 2 3
+health 0
+intelect 1
+range 1
+5 5 2 0 0 0 1 0 0
+0 65 1
+2 0 0
+0 60 1
+3 0 0
+0 61 1
+2 0 0
+0 51 1
+3 0 0
+0 54 1
+3 0 0
+0 58 1
+3 1 0
+orc 56 0 0 0 1
+bow 4 3
+strength 3
+agility 0
+range 1
+6 2 1 0 0 0 0 0 0
+0 61 1
+2 0 0
+0 60 1
+3 0 0
+0 54 2
+8 0 0
+3 0 0
+0 49 1
+3 0 0
+0 48 1
+3 0 0
+0 43 1
+4 0 0
+0 42 1
+4 0 0
+0 44 1
+4 0 0
+0 42 1
+4 0 0
+0 48 1
+3 0 0
+0 38 1
+4 1 1
+goblin 7 1 0 0 1
+axe 3 2
+strength 3
+agility 0
+1 3 1 0 0 0 0 0 0
+Friend 7 1 0 0 11
+sword 4 2
+strength 3
+agility 1
+sword 2 2
+strength 2
+agility 0
+dagger 3 2
+strength 2
+agility 1
+amulet 3 3
+health 1
+agility 1
+intelect 1
+dagger 4 2
+strength 2
+agility 2
+crossbow 6 3
+strength 2
+agility 3
+range 1
+bow 5 3
+strength 2
+agility 2
+range 1
+amulet 4 3
+health 3
+agility 1
+intelect 0
+sword 3 2
+strength 3
+agility 0
+dagger 5 2
+strength 2
+agility 3
+amulet 3 3
+health 1
+agility 2
+intelect 0
+0 24 1
+5 0 0
+0 37 1
+4 0 0
+0 34 1
+5 0 0
+0 26 1
+5 0 0
+0 35 1
+5 0 0
+0 26 1
+5 0 0
+0 22 1
+5 1 0
+orc 14 1 0 0 1
+sword 3 2
+strength 3
+agility 0
+7 4 1 1 0 0 0 0 0
+0 16 1
+5 0 0
+0 27 1
+5 0 0
+0 27 1
+5 0 0
+0 33 1
+5 0 0
+0 21 1
+5 0 0
+0 31 1
+5 0 1
+Friend 20 1 0 0 7
+amulet 3 3
+health 1
+agility 1
+intelect 1
+ring 6 4
+health 2
+strength 1
+agility 2
+intelect 1
+bow 3 3
+strength 2
+agility 0
+range 1
+axe 3 2
+strength 3
+agility 0
+bow 6 3
+strength 3
+agility 2
+range 1
+sword 2 2
+strength 1
+agility 1
+amulet 5 3
+health 2
+agility 2
+intelect 1
+0 33 1
+5 0 0
+0 37 1
+4 0 0
+0 39 1
+4 0 0
+0 37 1
+4 0 0
+0 30 2
+8 0 1
+Friend 25 1 0 0 9
+axe 3 2
+strength 2
+agility 1
+ring 7 4
+health 1
+strength 2
+agility 2
+intelect 2
+amulet 4 3
+health 1
+agility 1
+intelect 2
+ring 5 4
+health 1
+strength 2
+agility 1
+intelect 1
+axe 5 2
+strength 4
+agility 1
+wand 3 3
+health 1
+intelect 1
+range 1
+dagger 3 2
+strength 1
+agility 2
+bow 5 3
+strength 3
+agility 1
+range 1
+amulet 6 3
+health 2
+agility 2
+intelect 2
+5 0 0
+0 24 1
+5 0 0
+0 35 1
+5 0 0
+0 41 1
+4 0 1
+Friend 28 1 0 0 7
+wand 5 3
+health 1
+intelect 3
+range 1
+dagger 5 2
+strength 2
+agility 3
+sword 3 2
+strength 3
+agility 0
+ring 5 4
+health 1
+strength 2
+agility 1
+intelect 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+ring 5 4
+health 2
+strength 1
+agility 1
+intelect 1
+amulet 2 3
+health 1
+agility 1
+intelect 0
+0 32 1
+5 0 0
+0 34 1
+5 0 0
+0 35 1
+5 0 0
+0 31 1
+5 0 0
+1 24 1
+5 0 0
+1 22 1
+5 0 0
+1 33 1
+5 0 0
+1 36 1
+4 0 0
+1 19 1
+5 0 0
+1 25 1
+5 0 0
+1 31 1
+5 0 1
+Friend 39 1 0 0 9
+sword 4 2
+strength 2
+agility 2
+crossbow 6 3
+strength 2
+agility 3
+range 1
+wand 4 3
+health 0
+intelect 3
+range 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+ring 6 4
+health 2
+strength 2
+agility 1
+intelect 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+ring 5 4
+health 2
+strength 1
+agility 1
+intelect 1
+sword 4 2
+strength 2
+agility 2
+1 31 1
+5 0 0
+1 35 1
+5 0 0
+1 44 1
+4 0 0
+0 52 1
+3 0 0
+0 53 1
+3 0 1
+Friend 44 1 0 0 4
+wand 2 3
+health 0
+intelect 1
+range 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+dagger 3 2
+strength 2
+agility 1
+wand 4 3
+health 0
+intelect 3
+range 1
+0 49 2
+8 0 1
+Friend 45 1 0 0 7
+sword 2 2
+strength 1
+agility 1
+bow 3 3
+strength 2
+agility 0
+range 1
+wand 2 3
+health 0
+intelect 1
+range 1
+bow 4 3
+strength 3
+agility 0
+range 1
+amulet 3 3
+health 2
+agility 0
+intelect 1
+axe 2 2
+strength 2
+agility 0
+axe 2 2
+strength 2
+agility 0
+3 1 0
+dragon 45 1 1 0 1
+axe 4 2
+strength 3
+agility 1
+28 6 2 3 1 0 0 1 0
+0 61 1
+2 0 0
+0 59 1
+3 1 0
+imp 47 1 0 0 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+5 2 2 3 0 0 0 1 0
+0 59 1
+3 1 0
+ghoul 48 1 0 0 1
+ring 6 4
+health 2
+strength 1
+agility 1
+intelect 2
+3 4 2 1 0 0 0 0 0
+0 52 1
+3 0 0
+0 59 1
+3 0 0
+0 56 1
+3 0 0
+0 62 1
+2 0 0
+0 55 1
+3 0 0
+0 52 1
+3 0 1
+Friend 54 1 0 0 8
+sword 1 2
+strength 1
+agility 0
+ring 7 4
+health 1
+strength 2
+agility 2
+intelect 2
+dagger 5 2
+strength 2
+agility 3
+sword 2 2
+strength 1
+agility 1
+bow 3 3
+strength 2
+agility 0
+range 1
+dagger 3 2
+strength 2
+agility 1
+ring 5 4
+health 1
+strength 1
+agility 1
+intelect 2
+bow 5 3
+strength 2
+agility 2
+range 1
+0 56 1
+3 0 0
+0 61 1
+2 0 0
+0 53 1
+3 0 0
+0 49 1
+3 1 0
+ogre 58 1 0 0 1
+axe 5 2
+strength 4
+agility 1
+5 6 1 1 0 0 1 0 0
+0 43 1
+4 0 0
+0 51 1
+3 0 0
+0 56 1
+3 0 0
+0 50 1
+3 0 0
+0 43 1
+4 0 0
+0 42 1
+4 0 0
+0 43 1
+4 0 0
+0 45 1
+4 0 0
+0 47 1
+3 0 0
+0 43 1
+4 0 0
+0 48 1
+3 0 0
+0 48 1
+3 0 0
+0 36 1
+4 0 0
+0 30 1
+5 0 0
+0 29 1
+5 0 0
+0 13 1
+6 0 0
+0 11 2
+8 0 0
+6 0 0
+0 24 1
+5 0 0
+0 25 1
+5 0 0
+0 28 1
+5 0 0
+0 26 1
+5 0 0
+0 18 1
+5 0 0
+0 29 1
+5 0 0
+0 38 1
+4 0 0
+0 34 1
+5 0 0
+0 21 1
+5 0 0
+0 41 1
+4 0 0
+0 36 1
+4 0 0
+0 41 1
+4 0 0
+0 37 1
+4 0 0
+0 39 1
+4 0 0
+0 28 1
+5 0 0
+0 32 1
+5 0 0
+0 30 1
+5 0 0
+1 37 1
+4 0 0
+1 29 1
+5 0 0
+1 32 1
+5 0 0
+1 34 1
+5 0 0
+1 18 1
+5 0 0
+1 23 1
+5 0 0
+1 27 1
+5 0 0
+1 20 1
+5 0 0
+1 38 1
+4 0 0
+1 42 1
+4 0 0
+0 42 1
+4 0 0
+0 39 1
+4 0 0
+0 42 1
+4 0 0
+0 55 1
+3 0 0
+0 57 1
+3 0 0
+0 62 1
+2 0 0
+0 56 1
+3 0 0
+0 62 1
+2 0 0
+0 59 1
+3 0 0
+0 53 1
+3 0 0
+0 69 1
+2 0 0
+0 58 1
+3 0 1
+Friend 54 2 0 0 4
+wand 6 3
+health 1
+intelect 4
+range 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+wand 4 3
+health 0
+intelect 3
+range 1
+0 49 1
+3 0 0
+0 44 1
+4 0 0
+0 44 1
+4 0 0
+0 45 1
+4 0 0
+0 34 1
+5 0 0
+0 48 1
+3 0 1
+Friend 0 3 0 0 6
+crossbow 5 3
+strength 2
+agility 2
+range 1
+bow 4 3
+strength 3
+agility 0
+range 1
+sword 4 2
+strength 2
+agility 2
+wand 3 3
+health 0
+intelect 2
+range 1
+wand 5 3
+health 0
+intelect 4
+range 1
+bow 5 3
+strength 3
+agility 1
+range 1
+0 63 1
+2 0 0
+0 44 1
+4 1 0
+goblin 2 3 0 0 1
+bow 4 3
+strength 2
+agility 1
+range 1
+3 2 1 0 0 0 0 0 0
+0 49 1
+3 0 0
+0 37 1
+4 0 0
+0 49 1
+3 0 0
+0 41 1
+4 0 0
+0 44 1
+4 0 0
+0 34 1
+5 0 0
+0 31 1
+5 0 0
+0 33 1
+5 0 0
+0 32 1
+5 1 0
+ogre 11 3 0 0 1
+bow 4 3
+strength 3
+agility 0
+range 1
+5 6 2 1 0 0 1 0 0
+0 36 1
+4 0 0
+0 19 1
+5 0 0
+0 25 1
+5 0 0
+0 22 1
+5 0 0
+0 34 1
+5 1 0
+goblin 16 3 0 0 1
+dagger 2 2
+strength 1
+agility 1
+1 1 0 0 0 0 0 0 0
+0 16 1
+5 0 1
+Friend 17 3 0 0 9
+bow 4 3
+strength 3
+agility 0
+range 1
+ring 5 4
+health 1
+strength 1
+agility 1
+intelect 2
+axe 3 2
+strength 3
+agility 0
+bow 3 3
+strength 2
+agility 0
+range 1
+wand 5 3
+health 0
+intelect 4
+range 1
+sword 2 2
+strength 2
+agility 0
+crossbow 5 3
+strength 1
+agility 3
+range 1
+sword 1 2
+strength 1
+agility 0
+axe 3 2
+strength 3
+agility 0
+0 21 1
+5 0 0
+0 23 1
+5 0 0
+0 22 1
+5 0 0
+0 21 1
+5 0 0
+0 26 1
+5 0 0
+0 19 1
+5 0 0
+0 20 1
+5 0 0
+0 31 1
+5 0 0
+0 28 1
+5 0 1
+Friend 26 3 0 0 7
+wand 3 3
+health 1
+intelect 1
+range 1
+dagger 3 2
+strength 2
+agility 1
+sword 1 2
+strength 1
+agility 0
+dagger 3 2
+strength 1
+agility 2
+axe 3 2
+strength 2
+agility 1
+dagger 2 2
+strength 1
+agility 1
+wand 5 3
+health 0
+intelect 4
+range 1
+0 37 1
+4 0 1
+Friend 27 3 0 0 11
+crossbow 6 3
+strength 2
+agility 3
+range 1
+amulet 2 3
+health 2
+agility 0
+intelect 0
+bow 4 3
+strength 3
+agility 0
+range 1
+axe 3 2
+strength 3
+agility 0
+wand 5 3
+health 0
+intelect 4
+range 1
+amulet 2 3
+health 2
+agility 0
+intelect 0
+ring 6 4
+health 1
+strength 2
+agility 1
+intelect 2
+crossbow 6 3
+strength 2
+agility 3
+range 1
+wand 2 3
+health 0
+intelect 1
+range 1
+sword 5 2
+strength 3
+agility 2
+ring 4 4
+health 1
+strength 1
+agility 1
+intelect 1
+0 45 1
+4 0 0
+0 35 1
+5 0 0
+0 29 1
+5 0 0
+0 24 1
+5 1 0
+ogre 31 3 0 0 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+6 6 1 0 0 0 1 0 0
+0 26 1
+5 0 0
+1 21 1
+5 0 0
+1 20 1
+5 0 0
+1 20 1
+5 0 0
+1 13 1
+6 0 0
+1 20 1
+5 0 0
+1 11 1
+6 1 0
+dragon 38 3 0 0 1
+axe 3 2
+strength 2
+agility 1
+29 9 5 3 1 0 0 1 0
+1 17 1
+5 0 0
+1 27 2
+8 0 0
+5 0 0
+1 23 1
+5 0 0
+1 30 1
+5 0 0
+0 24 1
+5 0 0
+0 27 2
+8 0 0
+5 0 0
+0 48 1
+3 0 0
+0 55 1
+3 0 0
+0 43 1
+4 0 0
+0 51 1
+3 1 0
+elemental 48 3 0 0 1
+axe 2 2
+strength 2
+agility 0
+9 1 2 7 0 0 0 0 1
+0 48 1
+3 0 0
+0 58 1
+3 0 0
+0 53 1
+3 0 0
+0 57 1
+3 0 0
+0 63 1
+2 0 0
+0 50 1
+3 0 0
+0 59 1
+3 0 1
+Friend 55 3 0 0 6
+axe 3 2
+strength 3
+agility 0
+bow 3 3
+strength 2
+agility 0
+range 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+bow 5 3
+strength 2
+agility 2
+range 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+0 42 1
+4 1 0
+imp 56 3 0 0 1
+sword 1 2
+strength 1
+agility 0
+4 1 3 2 0 0 0 1 0
+0 55 1
+3 1 0
+dragon 57 3 0 0 1
+dagger 3 2
+strength 2
+agility 1
+27 8 4 2 1 0 0 1 0
+0 44 1
+4 0 0
+0 41 1
+4 0 1
+Friend 59 3 0 0 9
+axe 3 2
+strength 3
+agility 0
+dagger 2 2
+strength 1
+agility 1
+bow 5 3
+strength 3
+agility 1
+range 1
+ring 8 4
+health 2
+strength 2
+agility 2
+intelect 2
+dagger 3 2
+strength 2
+agility 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+ring 6 4
+health 2
+strength 1
+agility 2
+intelect 1
+ring 6 4
+health 1
+strength 2
+agility 2
+intelect 1
+wand 3 3
+health 0
+intelect 2
+range 1
+0 42 1
+4 0 0
+0 51 1
+3 0 0
+0 48 1
+3 0 1
+Friend 2 4 0 0 8
+wand 3 3
+health 1
+intelect 1
+range 1
+dagger 5 2
+strength 2
+agility 3
+bow 4 3
+strength 3
+agility 0
+range 1
+amulet 3 3
+health 1
+agility 0
+intelect 2
+sword 1 2
+strength 1
+agility 0
+wand 5 3
+health 1
+intelect 3
+range 1
+axe 2 2
+strength 2
+agility 0
+axe 2 2
+strength 2
+agility 0
+0 52 1
+3 1 0
+elemental 3 4 0 0 1
+axe 4 2
+strength 3
+agility 1
+9 2 4 6 0 0 0 0 1
+0 51 1
+3 1 0
+imp 4 4 0 0 1
+wand 4 3
+health 0
+intelect 3
+range 1
+2 3 3 2 0 0 0 1 0
+0 43 1
+4 0 0
+0 49 1
+3 0 0
+0 49 1
+3 0 0
+0 41 1
+4 0 0
+0 42 1
+4 0 0
+0 41 1
+4 0 0
+0 35 1
+5 0 0
+0 37 1
+4 0 0
+0 31 1
+5 1 0
+goblin 13 4 0 0 1
+wand 3 3
+health 1
+intelect 1
+range 1
+1 1 1 0 0 0 0 0 0
+0 18 1
+5 1 0
+ogre 14 4 0 0 1
+bow 4 3
+strength 2
+agility 1
+range 1
+6 6 2 1 0 0 1 0 0
+0 7 1
+7 1 0
+elemental 15 4 0 0 1
+sword 3 2
+strength 3
+agility 0
+9 1 2 6 0 0 0 0 1
+0 26 1
+5 0 0
+0 25 1
+5 0 0
+0 24 1
+5 1 1
+imp 18 4 0 0 1
+amulet 2 3
+health 2
+agility 0
+intelect 0
+3 2 2 4 0 0 0 1 0
+Friend 18 4 0 0 3
+ring 6 4
+health 2
+strength 1
+agility 1
+intelect 2
+sword 3 2
+strength 2
+agility 1
+ring 8 4
+health 2
+strength 2
+agility 2
+intelect 2
+0 25 1
+5 0 0
+0 21 1
+5 1 1
+wolf 20 4 0 0 1
+sword 2 2
+strength 2
+agility 0
+4 3 4 3 0 1 0 0 0
+Friend 20 4 0 0 9
+sword 2 2
+strength 1
+agility 1
+dagger 3 2
+strength 2
+agility 1
+axe 4 2
+strength 3
+agility 1
+amulet 5 3
+health 3
+agility 0
+intelect 2
+ring 6 4
+health 1
+strength 1
+agility 2
+intelect 2
+ring 5 4
+health 1
+strength 2
+agility 1
+intelect 1
+wand 5 3
+health 1
+intelect 3
+range 1
+amulet 2 3
+health 1
+agility 0
+intelect 1
+amulet 4 3
+health 2
+agility 0
+intelect 2
+0 32 1
+5 1 0
+vampire 21 4 0 0 1
+wand 6 3
+health 1
+intelect 4
+range 1
+5 5 5 3 0 1 0 0 1
+0 30 1
+5 0 0
+0 29 2
+8 0 0
+5 0 0
+0 23 1
+5 1 0
+elemental 24 4 0 0 1
+axe 2 2
+strength 2
+agility 0
+9 2 4 6 0 0 0 0 1
+0 35 1
+5 0 0
+0 37 2
+8 0 0
+4 1 0
+dragon 26 4 1 0 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+25 9 6 2 1 0 0 1 0
+0 36 1
+4 0 0
+0 43 1
+4 0 0
+0 23 1
+5 0 0
+0 36 1
+4 0 0
+0 25 2
+8 0 0
+5 0 0
+0 33 1
+5 0 1
+Friend 32 4 0 0 3
+axe 2 2
+strength 2
+agility 0
+sword 2 2
+strength 2
+agility 0
+sword 1 2
+strength 1
+agility 0
+1 33 1
+5 1 0
+wolf 33 4 0 0 1
+axe 4 2
+strength 3
+agility 1
+6 5 5 2 0 1 0 0 0
+1 15 1
+6 0 0
+1 28 1
+5 0 0
+1 15 1
+6 0 0
+1 9 1
+7 0 0
+1 12 1
+6 0 0
+1 20 1
+5 0 0
+1 22 1
+5 0 0
+1 23 1
+5 0 0
+1 30 1
+5 0 0
+1 41 1
+4 0 0
+1 27 1
+5 0 0
+1 44 1
+4 0 0
+0 45 1
+4 0 0
+0 48 1
+3 0 1
+Friend 47 4 0 0 3
+bow 5 3
+strength 2
+agility 2
+range 1
+sword 4 2
+strength 3
+agility 1
+amulet 1 3
+health 1
+agility 0
+intelect 0
+0 43 1
+4 0 0
+0 51 1
+3 0 0
+0 48 1
+3 0 0
+0 65 1
+2 0 1
+Friend 51 4 0 0 3
+wand 6 3
+health 1
+intelect 4
+range 1
+axe 4 2
+strength 3
+agility 1
+ring 8 4
+health 2
+strength 2
+agility 2
+intelect 2
+0 61 1
+2 0 0
+0 50 1
+3 0 0
+0 57 1
+3 0 0
+0 43 1
+4 0 0
+0 57 1
+3 0 0
+0 39 1
+4 1 0
+elemental 57 4 0 0 1
+bow 6 3
+strength 3
+agility 2
+range 1
+9 2 2 8 0 0 0 0 1
+0 40 1
+4 0 0
+0 37 1
+4 0 0
+0 31 1
+5 0 0
+0 53 1
+3 0 0
+0 46 1
+3 1 0
+ghoul 2 5 0 0 1
+ring 7 4
+health 1
+strength 2
+agility 2
+intelect 2
+2 2 2 0 0 0 0 0 0
+0 57 1
+3 0 0
+0 40 1
+4 1 0
+dragon 4 5 0 0 1
+dagger 4 2
+strength 1
+agility 3
+28 9 3 4 1 0 0 1 0
+0 50 1
+3 0 0
+0 38 1
+4 0 0
+0 45 1
+4 0 0
+0 37 1
+4 0 0
+0 45 1
+4 0 0
+0 43 1
+4 0 0
+0 39 1
+4 1 0
+imp 11 5 0 0 1
+dagger 5 2
+strength 2
+agility 3
+4 2 6 2 0 0 0 1 0
+0 34 1
+5 0 0
+0 36 1
+4 0 0
+0 32 1
+5 0 0
+0 31 1
+5 0 0
+0 33 1
+5 0 0
+0 32 1
+5 0 0
+0 30 1
+5 0 0
+0 37 1
+4 0 0
+0 43 1
+4 0 0
+0 33 1
+5 0 0
+0 23 1
+5 1 0
+elemental 22 5 0 0 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+8 1 4 7 0 0 0 0 1
+0 40 1
+4 0 0
+0 45 1
+4 0 0
+0 33 1
+5 1 0
+vampire 25 5 0 0 1
+wand 5 3
+health 1
+intelect 3
+range 1
+6 4 4 3 0 1 0 0 1
+0 36 1
+4 0 0
+0 39 1
+4 1 0
+goblin 27 5 0 0 1
+bow 5 3
+strength 3
+agility 1
+range 1
+1 1 1 0 0 0 0 0 0
+0 43 1
+4 0 0
+0 34 1
+5 1 0
+ogre 29 5 0 0 1
+amulet 5 3
+health 2
+agility 2
+intelect 1
+5 5 1 1 0 0 1 0 0
+0 12 1
+6 0 0
+0 19 1
+5 0 0
+0 21 1
+5 0 0
+1 27 1
+5 0 0
+1 29 1
+5 0 0
+1 21 1
+5 0 0
+1 25 1
+5 0 0
+1 12 1
+6 0 0
+1 14 1
+6 0 0
+1 28 1
+5 0 0
+1 17 1
+5 0 0
+1 23 1
+5 0 0
+1 22 1
+5 0 0
+1 28 1
+5 1 0
+dragon 43 5 0 0 1
+ring 6 4
+health 2
+strength 1
+agility 1
+intelect 2
+24 4 2 2 1 0 0 1 0
+1 33 1
+5 0 0
+1 41 1
+4 0 0
+1 45 1
+4 0 0
+1 32 1
+5 0 0
+0 47 1
+3 0 0
+0 55 1
+3 0 0
+0 63 1
+2 0 0
+0 52 1
+3 0 0
+0 64 1
+2 1 0
+goblin 52 5 0 0 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+1 3 0 0 0 0 0 0 0
+0 48 1
+3 0 0
+0 48 1
+3 0 0
+0 44 2
+8 0 0
+4 0 0
+0 48 1
+3 0 0
+0 25 1
+5 0 0
+0 22 1
+5 0 0
+0 49 1
+3 0 0
+0 43 1
+4 0 1
+Friend 0 6 0 0 3
+amulet 4 3
+health 2
+agility 0
+intelect 2
+crossbow 5 3
+strength 2
+agility 2
+range 1
+axe 3 2
+strength 3
+agility 0
+0 33 1
+5 0 0
+0 45 1
+4 0 1
+Friend 2 6 0 0 8
+wand 4 3
+health 1
+intelect 2
+range 1
+ring 7 4
+health 1
+strength 2
+agility 2
+intelect 2
+wand 5 3
+health 1
+intelect 3
+range 1
+dagger 4 2
+strength 2
+agility 2
+ring 5 4
+health 1
+strength 1
+agility 2
+intelect 1
+sword 2 2
+strength 2
+agility 0
+crossbow 5 3
+strength 2
+agility 2
+range 1
+amulet 6 3
+health 3
+agility 1
+intelect 2
+0 47 1
+3 0 0
+0 49 1
+3 0 0
+0 44 1
+4 0 0
+0 50 1
+3 0 0
+0 51 1
+3 0 0
+0 31 1
+5 1 0
+vampire 8 6 0 0 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+6 4 5 4 0 1 0 0 1
+0 49 1
+3 0 0
+0 42 1
+4 0 0
+0 35 1
+5 0 1
+Friend 11 6 0 0 5
+dagger 5 2
+strength 2
+agility 3
+sword 3 2
+strength 3
+agility 0
+wand 4 3
+health 1
+intelect 2
+range 1
+ring 4 4
+health 1
+strength 1
+agility 1
+intelect 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+0 34 1
+5 0 1
+Friend 12 6 0 0 5
+bow 4 3
+strength 3
+agility 0
+range 1
+sword 5 2
+strength 3
+agility 2
+amulet 3 3
+health 2
+agility 0
+intelect 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+sword 3 2
+strength 1
+agility 2
+0 30 1
+5 0 0
+0 32 1
+5 0 0
+0 21 1
+5 0 0
+0 22 1
+5 0 0
+0 43 1
+4 1 0
+imp 17 6 0 0 1
+bow 3 3
+strength 2
+agility 0
+range 1
+5 3 2 4 0 0 0 1 0
+0 48 1
+3 0 0
+0 39 1
+4 0 0
+0 27 1
+5 0 0
+0 36 1
+4 0 0
+0 33 1
+5 0 0
+0 54 1
+3 0 0
+0 40 1
+4 0 0
+0 43 1
+4 0 0
+0 43 1
+4 0 0
+0 52 1
+3 0 1
+Friend 27 6 0 0 8
+dagger 4 2
+strength 1
+agility 3
+dagger 3 2
+strength 2
+agility 1
+bow 4 3
+strength 3
+agility 0
+range 1
+axe 2 2
+strength 2
+agility 0
+bow 3 3
+strength 2
+agility 0
+range 1
+wand 6 3
+health 1
+intelect 4
+range 1
+bow 4 3
+strength 3
+agility 0
+range 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+0 40 1
+4 0 0
+0 40 1
+4 0 0
+0 24 1
+5 0 0
+0 23 1
+5 0 0
+0 28 1
+5 1 0
+vampire 32 6 0 0 1
+dagger 2 2
+strength 1
+agility 1
+6 5 5 2 0 1 0 0 1
+1 38 1
+4 0 0
+1 34 1
+5 0 0
+1 18 1
+5 0 0
+1 19 1
+5 0 0
+1 8 1
+7 0 0
+1 9 1
+7 0 0
+1 19 1
+5 0 0
+1 20 1
+5 0 0
+1 17 1
+5 0 0
+1 30 2
+8 0 0
+5 0 0
+1 31 1
+5 0 0
+1 32 1
+5 0 0
+1 36 1
+4 0 0
+1 43 1
+4 0 1
+Friend 46 6 0 0 6
+wand 3 3
+health 1
+intelect 1
+range 1
+ring 6 4
+health 1
+strength 2
+agility 2
+intelect 1
+sword 4 2
+strength 3
+agility 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+axe 5 2
+strength 4
+agility 1
+dagger 4 2
+strength 2
+agility 2
+1 40 1
+4 0 0
+1 40 1
+4 0 0
+0 62 1
+2 0 0
+0 46 1
+3 0 0
+0 43 1
+4 0 0
+0 51 1
+3 1 0
+ghoul 52 6 0 0 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+2 4 1 0 0 0 0 0 0
+0 40 1
+4 0 0
+0 57 1
+3 0 0
+0 47 1
+3 0 0
+0 49 1
+3 0 0
+0 30 1
+5 0 0
+0 31 1
+5 0 0
+0 42 1
+4 0 0
+0 37 1
+4 0 0
+0 38 1
+4 0 0
+0 38 1
+4 0 0
+0 44 1
+4 0 0
+0 36 1
+4 0 0
+0 36 1
+4 0 0
+0 41 1
+4 0 0
+0 43 1
+4 0 0
+0 50 1
+3 0 0
+0 47 2
+8 0 0
+3 0 0
+0 40 1
+4 0 0
+0 44 1
+4 0 0
+0 38 1
+4 0 0
+0 31 1
+5 0 0
+0 31 1
+5 0 0
+0 36 1
+4 0 1
+Friend 15 7 0 0 7
+sword 4 2
+strength 3
+agility 1
+dagger 2 2
+strength 1
+agility 1
+ring 7 4
+health 2
+strength 2
+agility 1
+intelect 2
+dagger 4 2
+strength 2
+agility 2
+amulet 3 3
+health 2
+agility 1
+intelect 0
+axe 4 2
+strength 4
+agility 0
+dagger 4 2
+strength 1
+agility 3
+0 43 1
+4 0 0
+0 37 1
+4 0 0
+0 41 1
+4 0 0
+0 41 1
+4 0 0
+0 38 1
+4 0 0
+0 42 1
+4 0 0
+0 35 1
+5 1 0
+ogre 22 7 0 0 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+5 6 1 0 0 0 1 0 0
+0 57 1
+3 0 0
+0 52 1
+3 0 0
+0 46 1
+3 0 0
+0 44 1
+4 0 0
+0 45 1
+4 0 0
+0 51 1
+3 0 0
+0 35 1
+5 0 0
+0 35 1
+5 0 0
+0 15 1
+6 0 0
+0 14 1
+6 0 0
+1 24 1
+5 0 0
+1 22 1
+5 0 1
+Friend 34 7 0 0 11
+crossbow 4 3
+strength 1
+agility 2
+range 1
+amulet 4 3
+health 3
+agility 1
+intelect 0
+wand 5 3
+health 0
+intelect 4
+range 1
+dagger 4 2
+strength 1
+agility 3
+axe 4 2
+strength 3
+agility 1
+sword 5 2
+strength 3
+agility 2
+wand 2 3
+health 0
+intelect 1
+range 1
+bow 4 3
+strength 2
+agility 1
+range 1
+amulet 3 3
+health 1
+agility 1
+intelect 1
+ring 7 4
+health 2
+strength 2
+agility 1
+intelect 2
+amulet 3 3
+health 3
+agility 0
+intelect 0
+1 30 1
+5 0 0
+1 27 1
+5 0 0
+1 21 1
+5 0 0
+1 18 1
+5 0 0
+1 12 1
+6 0 0
+1 10 1
+7 0 0
+1 18 1
+5 0 0
+1 9 1
+7 0 0
+1 28 1
+5 0 0
+1 26 1
+5 0 0
+1 42 1
+4 0 0
+1 32 1
+5 0 0
+1 48 1
+3 0 0
+1 60 1
+3 0 0
+1 60 1
+3 0 0
+1 44 1
+4 0 0
+1 54 1
+3 0 0
+0 55 1
+3 0 0
+0 60 1
+3 0 0
+0 32 1
+5 0 0
+0 42 1
+4 0 0
+0 33 1
+5 0 0
+0 23 1
+5 0 0
+0 17 1
+5 0 1
+Friend 58 7 0 0 10
+dagger 4 2
+strength 1
+agility 3
+amulet 2 3
+health 2
+agility 0
+intelect 0
+amulet 4 3
+health 2
+agility 2
+intelect 0
+bow 4 3
+strength 3
+agility 0
+range 1
+bow 4 3
+strength 2
+agility 1
+range 1
+dagger 4 2
+strength 1
+agility 3
+bow 4 3
+strength 3
+agility 0
+range 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+axe 3 2
+strength 3
+agility 0
+bow 6 3
+strength 3
+agility 2
+range 1
+0 47 1
+3 0 0
+0 37 1
+4 0 0
+0 36 2
+8 1 0
+ogre 1 8 0 0 1
+dagger 5 2
+strength 2
+agility 3
+5 5 1 0 0 0 1 0 0
+4 0 0
+0 39 1
+4 1 0
+dragon 2 8 0 0 1
+dagger 2 2
+strength 1
+agility 1
+29 6 2 2 1 0 0 1 0
+0 31 1
+5 0 0
+0 41 1
+4 0 0
+0 29 1
+5 0 0
+0 31 1
+5 0 0
+0 45 1
+4 0 0
+0 37 1
+4 0 0
+0 43 1
+4 0 0
+0 37 1
+4 0 0
+0 40 1
+4 0 0
+0 30 1
+5 1 0
+dragon 12 8 0 0 1
+axe 5 2
+strength 4
+agility 1
+22 10 6 2 1 0 0 1 0
+0 41 1
+4 1 0
+vampire 13 8 0 0 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+4 4 4 2 0 1 0 0 1
+0 41 1
+4 0 0
+0 45 1
+4 0 0
+0 33 1
+5 0 0
+0 36 1
+4 0 0
+0 40 1
+4 0 0
+0 42 1
+4 0 0
+0 39 1
+4 0 0
+0 38 1
+4 1 0
+ogre 21 8 0 0 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+5 5 2 1 0 0 1 0 0
+0 55 1
+3 0 0
+0 48 1
+3 0 0
+0 58 1
+3 0 0
+0 55 1
+3 0 0
+0 42 1
+4 0 0
+0 61 1
+2 0 0
+0 51 1
+3 0 0
+0 47 1
+3 0 0
+0 38 1
+4 0 0
+0 37 1
+4 1 0
+wolf 31 8 0 0 1
+amulet 4 3
+health 1
+agility 2
+intelect 1
+4 6 4 3 0 1 0 0 0
+0 28 1
+5 0 0
+0 30 1
+5 0 0
+1 16 1
+5 0 0
+1 25 1
+5 0 0
+1 19 1
+5 0 0
+1 4 1
+7 0 0
+1 9 1
+7 0 0
+1 15 1
+6 0 0
+1 13 1
+6 0 0
+1 26 1
+5 0 0
+1 31 1
+5 0 0
+1 22 1
+5 0 0
+1 17 1
+5 0 0
+1 35 1
+5 0 0
+1 45 1
+4 0 0
+1 38 1
+4 1 0
+dragon 47 8 0 0 1
+axe 4 2
+strength 4
+agility 0
+30 6 5 3 1 0 0 1 0
+1 37 1
+4 0 0
+1 41 1
+4 0 0
+1 45 1
+4 0 0
+1 65 1
+2 0 0
+1 51 1
+3 0 0
+0 59 1
+3 1 0
+ghoul 53 8 0 0 1
+ring 5 4
+health 1
+strength 2
+agility 1
+intelect 1
+2 3 2 0 0 0 0 0 0
+0 49 1
+3 0 0
+0 45 1
+4 0 0
+0 35 1
+5 0 1
+Friend 56 8 0 0 4
+amulet 1 3
+health 1
+agility 0
+intelect 0
+bow 4 3
+strength 3
+agility 0
+range 1
+wand 3 3
+health 1
+intelect 1
+range 1
+sword 3 2
+strength 3
+agility 0
+0 17 1
+5 0 0
+0 37 1
+4 0 0
+0 35 1
+5 0 0
+0 31 1
+5 0 0
+0 37 1
+4 1 0
+orc 1 9 0 0 1
+amulet 3 3
+health 3
+agility 0
+intelect 0
+8 2 3 1 0 0 0 0 0
+0 35 1
+5 0 0
+0 34 1
+5 0 0
+0 39 1
+4 0 0
+0 41 1
+4 0 0
+0 30 1
+5 0 0
+0 34 1
+5 0 0
+0 38 1
+4 0 0
+0 43 1
+4 0 0
+0 38 1
+4 0 0
+0 41 1
+4 0 0
+0 33 1
+5 1 0
+wolf 12 9 0 0 1
+bow 5 3
+strength 2
+agility 2
+range 1
+5 4 4 3 0 1 0 0 0
+0 35 1
+5 0 0
+0 45 1
+4 0 0
+0 36 1
+4 0 0
+0 34 1
+5 0 0
+0 44 1
+4 0 0
+0 45 1
+4 0 0
+0 36 1
+4 0 0
+0 48 1
+3 1 0
+ogre 20 9 0 0 1
+ring 7 4
+health 2
+strength 1
+agility 2
+intelect 2
+5 5 1 0 0 0 1 0 0
+0 46 1
+3 0 0
+0 52 1
+3 1 0
+ogre 22 9 0 0 1
+axe 5 2
+strength 4
+agility 1
+6 5 2 0 0 0 1 0 0
+0 63 1
+2 0 0
+0 54 1
+3 0 0
+0 66 1
+2 0 0
+0 63 1
+2 0 0
+0 55 1
+3 0 0
+0 65 1
+2 0 0
+0 63 1
+2 0 0
+0 44 1
+4 0 0
+0 50 1
+3 0 0
+0 43 1
+4 0 0
+1 41 1
+4 0 1
+Friend 33 9 0 0 9
+dagger 2 2
+strength 1
+agility 1
+axe 5 2
+strength 4
+agility 1
+sword 2 2
+strength 1
+agility 1
+amulet 4 3
+health 1
+agility 1
+intelect 2
+sword 3 2
+strength 2
+agility 1
+sword 2 2
+strength 1
+agility 1
+bow 5 3
+strength 3
+agility 1
+range 1
+amulet 4 3
+health 3
+agility 1
+intelect 0
+crossbow 5 3
+strength 1
+agility 3
+range 1
+1 24 1
+5 0 0
+1 12 1
+6 0 0
+1 22 1
+5 0 0
+1 21 1
+5 0 0
+1 20 1
+5 0 0
+1 19 1
+5 0 0
+1 23 1
+5 0 0
+1 20 1
+5 0 0
+1 16 1
+5 0 0
+1 39 1
+4 0 0
+1 3 1
+7 0 0
+1 -2 1
+7 0 0
+1 43 1
+4 0 0
+1 41 1
+4 0 0
+1 33 1
+5 0 0
+1 49 1
+3 0 0
+1 53 1
+3 0 0
+1 57 1
+3 0 1
+Friend 51 9 0 0 8
+bow 3 3
+strength 2
+agility 0
+range 1
+wand 6 3
+health 1
+intelect 4
+range 1
+dagger 4 2
+strength 1
+agility 3
+crossbow 5 3
+strength 2
+agility 2
+range 1
+sword 1 2
+strength 1
+agility 0
+axe 3 2
+strength 3
+agility 0
+ring 5 4
+health 2
+strength 1
+agility 1
+intelect 1
+bow 5 3
+strength 2
+agility 2
+range 1
+1 53 1
+3 0 0
+0 48 1
+3 0 0
+0 36 1
+4 0 0
+0 46 1
+3 0 0
+0 46 1
+3 0 0
+0 36 1
+4 0 0
+0 32 1
+5 0 0
+0 35 1
+5 0 0
+0 32 1
+5 0 0
+0 31 1
+5 0 0
+0 39 1
+4 0 0
+0 32 1
+5 0 0
+0 39 1
+4 0 0
+0 39 1
+4 0 0
+0 22 1
+5 1 0
+elemental 6 10 0 0 1
+sword 1 2
+strength 1
+agility 0
+9 3 3 7 0 0 0 0 1
+0 33 1
+5 0 0
+0 29 1
+5 0 0
+0 38 1
+4 0 0
+0 39 1
+4 0 0
+0 36 1
+4 0 0
+0 39 1
+4 0 0
+0 33 1
+5 0 0
+0 42 1
+4 0 1
+Friend 14 10 0 0 6
+wand 4 3
+health 1
+intelect 2
+range 1
+axe 2 2
+strength 2
+agility 0
+sword 2 2
+strength 2
+agility 0
+ring 5 4
+health 1
+strength 2
+agility 1
+intelect 1
+ring 6 4
+health 1
+strength 2
+agility 1
+intelect 2
+bow 5 3
+strength 2
+agility 2
+range 1
+0 41 1
+4 0 0
+0 43 1
+4 0 0
+0 34 1
+5 0 0
+0 50 1
+3 0 0
+0 55 1
+3 0 0
+0 57 1
+3 0 0
+0 49 1
+3 0 0
+0 61 1
+2 0 0
+0 53 1
+3 0 0
+0 58 1
+3 0 0
+0 65 2
+8 0 0
+2 0 0
+0 60 1
+3 0 0
+0 60 1
+3 1 0
+goblin 27 10 0 0 1
+axe 2 2
+strength 2
+agility 0
+1 3 0 0 0 0 0 0 0
+0 57 1
+3 0 0
+0 56 1
+3 0 0
+0 47 1
+3 0 0
+0 50 1
+3 0 0
+0 48 1
+3 0 0
+1 33 1
+5 0 0
+1 26 1
+5 0 0
+1 10 1
+7 0 0
+1 24 1
+5 0 0
+1 6 1
+7 0 0
+1 7 1
+7 0 0
+1 21 1
+5 0 0
+1 10 1
+7 0 0
+1 15 1
+6 0 0
+1 17 1
+5 0 0
+1 26 1
+5 0 0
+1 14 1
+6 0 0
+1 0 1
+7 0 0
+1 39 1
+4 0 0
+1 55 1
+3 0 0
+1 49 1
+3 0 0
+1 44 1
+4 0 0
+1 66 1
+2 0 0
+1 59 1
+3 0 0
+1 59 1
+3 0 0
+0 50 1
+3 0 0
+0 53 1
+3 0 0
+0 41 1
+4 1 0
+dragon 55 10 0 0 1
+amulet 7 3
+health 3
+agility 2
+intelect 2
+27 4 3 3 1 0 0 1 0
+0 39 1
+4 0 0
+0 44 1
+4 0 0
+0 43 1
+4 0 0
+0 33 1
+5 0 0
+0 38 1
+4 0 0
+0 31 1
+5 0 0
+0 37 1
+4 0 0
+0 32 1
+5 0 0
+0 34 1
+5 0 0
+0 40 1
+4 0 0
+0 36 1
+4 0 0
+0 30 1
+5 0 0
+0 43 1
+4 0 0
+0 39 1
+4 0 0
+0 35 1
+5 1 0
+orc 10 11 0 0 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+6 3 3 1 0 0 0 0 0
+0 22 1
+5 0 0
+0 31 1
+5 1 0
+elemental 12 11 0 0 1
+dagger 4 2
+strength 2
+agility 2
+9 3 2 7 0 0 0 0 1
+0 32 1
+5 0 0
+0 36 1
+4 0 0
+0 33 1
+5 0 0
+0 40 1
+4 0 0
+0 46 1
+3 0 0
+0 50 1
+3 0 0
+0 46 1
+3 0 0
+0 69 1
+2 0 0
+0 62 1
+2 0 0
+0 58 1
+3 0 0
+0 71 1
+2 0 0
+0 65 1
+2 0 0
+0 67 1
+2 0 0
+0 64 1
+2 0 0
+0 55 1
+3 0 0
+0 57 1
+3 1 0
+ogre 28 11 0 0 1
+bow 5 3
+strength 3
+agility 1
+range 1
+5 5 2 1 0 0 1 0 0
+0 59 1
+3 0 0
+0 45 1
+4 0 0
+0 44 1
+4 0 0
+0 41 1
+4 0 0
+1 30 1
+5 0 0
+1 34 1
+5 0 0
+1 24 1
+5 0 0
+1 25 1
+5 0 0
+1 29 1
+5 0 0
+1 18 1
+5 0 0
+1 8 1
+7 1 0
+vampire 39 11 0 0 1
+dagger 2 2
+strength 1
+agility 1
+4 6 3 4 0 1 0 0 1
+1 12 1
+6 0 0
+1 17 1
+5 0 0
+1 -15 1
+7 0 0
+1 6 1
+7 0 0
+1 1 1
+7 0 1
+Friend 44 11 0 0 4
+bow 4 3
+strength 2
+agility 1
+range 1
+axe 4 2
+strength 3
+agility 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+sword 4 2
+strength 3
+agility 1
+1 28 1
+5 0 0
+1 32 1
+5 0 0
+1 67 1
+2 0 0
+1 32 1
+5 0 0
+1 27 1
+5 0 0
+1 49 1
+3 0 0
+1 64 1
+2 0 0
+1 51 1
+3 0 0
+0 64 1
+2 0 0
+0 49 1
+3 0 0
+0 38 1
+4 0 0
+0 40 1
+4 0 0
+0 43 1
+4 0 0
+0 44 1
+4 1 0
+ogre 58 11 0 0 1
+wand 5 3
+health 0
+intelect 4
+range 1
+5 5 1 0 0 0 1 0 0
+0 30 1
+5 1 0
+wolf 59 11 0 0 1
+bow 6 3
+strength 3
+agility 2
+range 1
+6 3 5 3 0 1 0 0 0
+0 33 1
+5 0 0
+0 36 1
+4 1 0
+wolf 1 12 0 0 1
+bow 5 3
+strength 2
+agility 2
+range 1
+5 3 4 2 0 1 0 0 0
+0 34 1
+5 0 0
+0 36 1
+4 0 0
+0 34 1
+5 0 0
+0 41 1
+4 0 0
+0 22 1
+5 0 0
+0 29 1
+5 0 0
+0 27 1
+5 0 0
+0 37 1
+4 0 0
+0 31 2
+8 0 1
+Friend 10 12 0 0 9
+bow 3 3
+strength 2
+agility 0
+range 1
+wand 4 3
+health 0
+intelect 3
+range 1
+axe 3 2
+strength 3
+agility 0
+axe 3 2
+strength 3
+agility 0
+amulet 6 3
+health 3
+agility 2
+intelect 1
+dagger 3 2
+strength 2
+agility 1
+amulet 2 3
+health 2
+agility 0
+intelect 0
+crossbow 6 3
+strength 2
+agility 3
+range 1
+wand 3 3
+health 1
+intelect 1
+range 1
+5 0 0
+0 37 1
+4 0 0
+0 42 1
+4 0 0
+0 36 1
+4 0 0
+0 37 1
+4 0 0
+0 47 1
+3 0 0
+0 38 1
+4 0 0
+0 48 1
+3 0 0
+0 48 1
+3 0 0
+0 54 1
+3 0 0
+0 51 1
+3 0 1
+Friend 20 12 0 0 8
+sword 5 2
+strength 3
+agility 2
+axe 2 2
+strength 2
+agility 0
+dagger 4 2
+strength 1
+agility 3
+crossbow 5 3
+strength 2
+agility 2
+range 1
+bow 5 3
+strength 3
+agility 1
+range 1
+sword 4 2
+strength 2
+agility 2
+sword 3 2
+strength 1
+agility 2
+wand 3 3
+health 0
+intelect 2
+range 1
+0 60 1
+3 0 1
+Friend 21 12 0 0 7
+dagger 3 2
+strength 1
+agility 2
+crossbow 4 3
+strength 1
+agility 2
+range 1
+dagger 3 2
+strength 1
+agility 2
+axe 4 2
+strength 3
+agility 1
+amulet 4 3
+health 3
+agility 0
+intelect 1
+axe 4 2
+strength 3
+agility 1
+amulet 2 3
+health 2
+agility 0
+intelect 0
+0 70 1
+2 0 0
+0 63 1
+2 0 0
+0 63 1
+2 0 0
+0 74 1
+2 0 0
+0 66 1
+2 0 0
+0 72 1
+2 0 0
+0 62 1
+2 1 1
+goblin 28 12 0 0 1
+dagger 3 2
+strength 2
+agility 1
+2 1 1 0 0 0 0 0 0
+Friend 28 12 0 0 9
+ring 7 4
+health 1
+strength 2
+agility 2
+intelect 2
+dagger 4 2
+strength 1
+agility 3
+sword 1 2
+strength 1
+agility 0
+dagger 3 2
+strength 1
+agility 2
+wand 4 3
+health 0
+intelect 3
+range 1
+ring 6 4
+health 1
+strength 2
+agility 2
+intelect 1
+wand 4 3
+health 0
+intelect 3
+range 1
+ring 5 4
+health 2
+strength 1
+agility 1
+intelect 1
+dagger 2 2
+strength 1
+agility 1
+0 63 1
+2 0 0
+0 50 1
+3 1 0
+vampire 30 12 0 0 1
+amulet 5 3
+health 2
+agility 2
+intelect 1
+4 6 5 4 0 1 0 0 1
+0 44 1
+4 0 1
+Friend 31 12 0 0 11
+ring 7 4
+health 2
+strength 2
+agility 2
+intelect 1
+wand 2 3
+health 0
+intelect 1
+range 1
+ring 4 4
+health 1
+strength 1
+agility 1
+intelect 1
+wand 6 3
+health 1
+intelect 4
+range 1
+dagger 3 2
+strength 2
+agility 1
+amulet 5 3
+health 3
+agility 2
+intelect 0
+bow 5 3
+strength 3
+agility 1
+range 1
+wand 3 3
+health 1
+intelect 1
+range 1
+axe 4 2
+strength 4
+agility 0
+wand 5 3
+health 1
+intelect 3
+range 1
+axe 4 2
+strength 4
+agility 0
+0 43 1
+4 0 0
+1 39 2
+8 0 0
+4 0 0
+1 27 1
+5 1 0
+ogre 34 12 0 0 1
+axe 4 2
+strength 3
+agility 1
+5 6 1 0 0 0 1 0 0
+1 21 1
+5 1 1
+vampire 35 12 0 0 1
+amulet 4 3
+health 3
+agility 0
+intelect 1
+4 6 5 3 0 1 0 0 1
+Friend 35 12 0 0 11
+amulet 3 3
+health 1
+agility 0
+intelect 2
+dagger 3 2
+strength 2
+agility 1
+wand 4 3
+health 0
+intelect 3
+range 1
+wand 6 3
+health 1
+intelect 4
+range 1
+bow 4 3
+strength 2
+agility 1
+range 1
+dagger 3 2
+strength 2
+agility 1
+dagger 4 2
+strength 1
+agility 3
+dagger 4 2
+strength 2
+agility 2
+bow 5 3
+strength 3
+agility 1
+range 1
+amulet 3 3
+health 1
+agility 2
+intelect 0
+crossbow 5 3
+strength 1
+agility 3
+range 1
+1 15 1
+6 0 0
+1 7 1
+7 0 0
+1 14 1
+6 1 0
+imp 38 12 0 0 1
+wand 2 3
+health 0
+intelect 1
+range 1
+5 1 5 2 0 0 0 1 0
+1 17 1
+5 0 0
+1 27 1
+5 0 0
+1 27 1
+5 0 0
+1 33 1
+5 0 0
+1 21 1
+5 0 0
+1 22 1
+5 0 0
+1 48 1
+3 0 0
+1 48 1
+3 1 0
+elemental 46 12 0 0 1
+sword 1 2
+strength 1
+agility 0
+9 3 3 6 0 0 0 0 1
+1 54 1
+3 0 0
+1 41 1
+4 0 0
+1 34 1
+5 1 0
+orc 49 12 0 0 1
+dagger 2 2
+strength 1
+agility 1
+8 3 3 0 0 0 0 0 0
+1 60 1
+3 1 0
+vampire 50 12 0 0 1
+amulet 3 3
+health 1
+agility 0
+intelect 2
+4 5 5 4 0 1 0 0 1
+1 71 1
+2 0 0
+1 64 1
+2 0 0
+0 57 1
+3 0 0
+0 62 1
+2 0 0
+0 40 1
+4 0 0
+0 44 1
+4 0 0
+0 35 1
+5 1 0
+ogre 57 12 0 0 1
+dagger 3 2
+strength 2
+agility 1
+6 6 1 0 0 0 1 0 0
+0 53 1
+3 0 0
+0 45 1
+4 0 0
+0 48 1
+3 0 0
+0 39 1
+4 0 0
+0 51 1
+3 0 0
+0 33 1
+5 0 0
+0 39 1
+4 0 0
+0 36 1
+4 0 0
+0 19 1
+5 0 0
+0 25 1
+5 0 0
+0 38 1
+4 0 0
+0 36 1
+4 0 0
+0 39 1
+4 1 1
+orc 10 13 0 0 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+7 5 1 0 0 0 0 0 0
+Friend 10 13 0 0 4
+amulet 3 3
+health 2
+agility 1
+intelect 0
+wand 5 3
+health 0
+intelect 4
+range 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+axe 4 2
+strength 4
+agility 0
+0 37 1
+4 0 0
+0 35 1
+5 0 0
+0 20 1
+5 0 0
+0 47 1
+3 1 0
+ghoul 14 13 0 0 1
+axe 3 2
+strength 2
+agility 1
+3 2 1 0 0 0 0 0 0
+0 40 1
+4 0 0
+0 48 1
+3 1 0
+orc 16 13 0 0 1
+wand 5 3
+health 1
+intelect 3
+range 1
+7 5 1 0 0 0 0 0 0
+0 44 1
+4 0 0
+0 50 1
+3 0 0
+0 45 1
+4 0 0
+0 56 1
+3 0 0
+0 53 1
+3 0 0
+0 63 1
+2 1 0
+elemental 22 13 0 0 1
+amulet 3 3
+health 1
+agility 0
+intelect 2
+9 1 4 7 0 0 0 0 1
+0 69 1
+2 0 0
+0 67 1
+2 0 0
+0 65 1
+2 0 0
+0 65 1
+2 1 0
+goblin 26 13 0 0 1
+ring 5 4
+health 1
+strength 2
+agility 1
+intelect 1
+2 1 1 0 0 0 0 0 0
+0 65 1
+2 0 0
+0 56 1
+3 0 0
+0 50 1
+3 0 0
+0 50 1
+3 1 0
+elemental 30 13 0 0 1
+wand 3 3
+health 1
+intelect 1
+range 1
+9 3 2 6 0 0 0 0 1
+0 41 1
+4 0 0
+0 40 1
+4 0 0
+1 39 1
+4 0 0
+1 21 1
+5 0 0
+1 21 1
+5 0 0
+1 21 1
+5 0 0
+1 19 1
+5 0 0
+1 24 1
+5 0 0
+1 26 1
+5 0 0
+1 25 1
+5 0 0
+1 36 1
+4 0 0
+1 34 1
+5 0 0
+1 31 1
+5 0 0
+1 44 1
+4 1 0
+ghoul 44 13 0 0 1
+sword 2 2
+strength 1
+agility 1
+2 4 2 1 0 0 0 0 0
+1 55 1
+3 0 0
+1 62 1
+2 0 0
+1 57 1
+3 0 1
+Friend 47 13 0 0 6
+crossbow 5 3
+strength 1
+agility 3
+range 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+dagger 3 2
+strength 2
+agility 1
+amulet 3 3
+health 3
+agility 0
+intelect 0
+sword 2 2
+strength 2
+agility 0
+amulet 4 3
+health 2
+agility 2
+intelect 0
+1 73 1
+2 0 0
+1 49 1
+3 1 0
+wolf 49 13 0 0 1
+bow 6 3
+strength 3
+agility 2
+range 1
+6 3 5 2 0 1 0 0 0
+1 53 1
+3 1 0
+goblin 50 13 0 0 1
+axe 2 2
+strength 2
+agility 0
+1 3 0 0 0 0 0 0 0
+1 20 1
+5 0 0
+0 56 1
+3 0 0
+0 57 1
+3 0 0
+0 62 1
+2 0 0
+0 63 1
+2 0 0
+0 45 1
+4 0 0
+0 34 1
+5 0 0
+0 37 1
+4 1 0
+dragon 58 13 0 0 1
+bow 4 3
+strength 3
+agility 0
+range 1
+30 4 6 3 1 0 0 1 0
+0 60 1
+3 0 0
+0 39 1
+4 1 0
+ogre 0 14 0 0 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+6 5 1 0 0 0 1 0 0
+0 43 1
+4 0 1
+Friend 1 14 0 0 9
+dagger 3 2
+strength 2
+agility 1
+amulet 2 3
+health 1
+agility 1
+intelect 0
+ring 7 4
+health 2
+strength 2
+agility 1
+intelect 2
+wand 2 3
+health 0
+intelect 1
+range 1
+wand 5 3
+health 0
+intelect 4
+range 1
+amulet 3 3
+health 2
+agility 1
+intelect 0
+dagger 3 2
+strength 1
+agility 2
+amulet 4 3
+health 1
+agility 1
+intelect 2
+axe 5 2
+strength 4
+agility 1
+0 41 1
+4 0 0
+0 38 1
+4 0 0
+0 29 1
+5 0 0
+0 33 1
+5 1 0
+ogre 5 14 0 0 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+5 5 1 0 0 0 1 0 0
+0 28 1
+5 0 0
+0 32 2
+8 0 0
+5 0 0
+0 32 1
+5 0 0
+0 31 1
+5 1 0
+orc 9 14 0 0 1
+amulet 3 3
+health 1
+agility 0
+intelect 2
+8 2 1 1 0 0 0 0 0
+0 39 1
+4 1 0
+elemental 10 14 0 0 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+8 1 3 8 0 0 0 0 1
+0 36 1
+4 0 1
+Friend 11 14 0 0 11
+crossbow 5 3
+strength 1
+agility 3
+range 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+dagger 2 2
+strength 1
+agility 1
+sword 2 2
+strength 2
+agility 0
+wand 2 3
+health 0
+intelect 1
+range 1
+amulet 4 3
+health 1
+agility 1
+intelect 2
+ring 7 4
+health 2
+strength 2
+agility 2
+intelect 1
+axe 4 2
+strength 3
+agility 1
+dagger 3 2
+strength 1
+agility 2
+axe 5 2
+strength 4
+agility 1
+sword 3 2
+strength 2
+agility 1
+0 32 1
+5 0 0
+0 32 1
+5 0 0
+0 41 1
+4 0 0
+0 45 1
+4 1 0
+goblin 15 14 0 0 1
+ring 5 4
+health 1
+strength 1
+agility 2
+intelect 1
+1 2 0 0 0 0 0 0 0
+0 54 1
+3 0 0
+0 40 1
+4 0 0
+0 51 1
+3 0 0
+0 49 1
+3 1 0
+ghoul 19 14 0 0 1
+wand 4 3
+health 0
+intelect 3
+range 1
+3 3 2 0 0 0 0 0 0
+0 52 1
+3 0 0
+0 57 1
+3 0 0
+0 59 1
+3 0 0
+0 64 1
+2 0 0
+0 66 1
+2 0 0
+0 72 1
+2 0 0
+0 67 1
+2 1 0
+ghoul 26 14 0 0 1
+ring 6 4
+health 2
+strength 2
+agility 1
+intelect 1
+3 4 1 0 0 0 0 0 0
+0 64 1
+2 0 0
+0 62 1
+2 0 0
+0 53 1
+3 0 0
+0 57 1
+3 0 0
+0 48 1
+3 1 0
+orc 31 14 0 0 1
+wand 3 3
+health 1
+intelect 1
+range 1
+6 3 0 1 0 0 0 0 0
+1 37 1
+4 0 0
+1 37 1
+4 0 0
+1 34 1
+5 0 0
+1 35 1
+5 0 0
+1 29 1
+5 0 0
+1 19 1
+5 0 0
+1 26 1
+5 0 0
+1 17 1
+5 1 0
+dragon 39 14 0 0 1
+axe 3 2
+strength 3
+agility 0
+23 6 3 4 1 0 0 1 0
+1 31 1
+5 0 0
+1 27 1
+5 1 0
+ghoul 41 14 0 0 1
+axe 3 2
+strength 3
+agility 0
+2 3 2 0 0 0 0 0 0
+1 28 1
+5 0 0
+1 44 1
+4 0 0
+1 49 1
+3 0 0
+1 51 1
+3 0 0
+1 53 1
+3 0 0
+1 73 1
+2 0 0
+1 67 1
+2 0 0
+0 33 1
+5 0 1
+Friend 49 14 0 0 10
+crossbow 5 3
+strength 1
+agility 3
+range 1
+bow 3 3
+strength 2
+agility 0
+range 1
+axe 4 2
+strength 4
+agility 0
+bow 4 3
+strength 2
+agility 1
+range 1
+bow 6 3
+strength 3
+agility 2
+range 1
+wand 5 3
+health 0
+intelect 4
+range 1
+axe 4 2
+strength 3
+agility 1
+dagger 4 2
+strength 2
+agility 2
+ring 5 4
+health 1
+strength 1
+agility 1
+intelect 2
+dagger 3 2
+strength 2
+agility 1
+0 32 1
+5 0 0
+0 14 1
+6 0 0
+0 14 1
+6 0 0
+0 71 1
+2 0 0
+0 61 2
+8 0 0
+2 0 0
+0 60 1
+3 0 0
+0 39 1
+4 0 1
+Friend 56 14 0 0 11
+axe 4 2
+strength 4
+agility 0
+wand 2 3
+health 0
+intelect 1
+range 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+sword 3 2
+strength 2
+agility 1
+wand 5 3
+health 0
+intelect 4
+range 1
+ring 7 4
+health 2
+strength 1
+agility 2
+intelect 2
+crossbow 4 3
+strength 1
+agility 2
+range 1
+amulet 1 3
+health 1
+agility 0
+intelect 0
+dagger 5 2
+strength 2
+agility 3
+axe 3 2
+strength 2
+agility 1
+0 37 1
+4 0 0
+0 56 1
+3 1 0
+orc 58 14 0 0 1
+amulet 4 3
+health 1
+agility 2
+intelect 1
+6 2 2 1 0 0 0 0 0
+0 51 1
+3 0 0
+0 54 1
+3 0 0
+0 53 1
+3 0 0
+0 53 1
+3 0 0
+0 39 1
+4 0 0
+0 36 1
+4 0 0
+0 33 1
+5 0 0
+0 34 1
+5 0 0
+0 29 1
+5 0 0
+0 26 1
+5 0 0
+0 35 1
+5 0 0
+0 25 1
+5 0 0
+0 21 1
+5 0 0
+0 27 1
+5 0 0
+0 30 1
+5 1 0
+orc 13 15 0 0 1
+sword 5 2
+strength 3
+agility 2
+4 4 1 0 0 0 0 0 0
+0 36 1
+4 0 0
+0 34 1
+5 0 0
+0 35 1
+5 0 0
+0 36 1
+4 0 0
+0 37 1
+4 0 0
+0 56 1
+3 0 0
+0 51 1
+3 0 0
+0 59 1
+3 0 0
+0 60 1
+3 0 0
+0 64 1
+2 0 0
+0 67 1
+2 0 0
+0 68 1
+2 0 0
+0 67 1
+2 0 0
+0 57 1
+3 0 0
+0 51 1
+3 0 0
+0 57 1
+3 0 0
+0 55 1
+3 0 0
+0 41 1
+4 1 0
+wolf 31 15 0 0 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+4 4 5 3 0 1 0 0 0
+1 44 1
+4 0 0
+1 41 2
+8 0 0
+4 1 0
+wolf 33 15 1 0 1
+axe 4 2
+strength 4
+agility 0
+5 2 5 2 0 1 0 0 0
+1 39 1
+4 0 0
+1 35 1
+5 0 0
+1 24 1
+5 0 0
+1 34 1
+5 0 0
+1 21 1
+5 0 0
+1 11 1
+6 1 0
+dragon 39 15 0 0 1
+wand 2 3
+health 0
+intelect 1
+range 1
+21 12 5 3 1 0 0 1 0
+1 22 1
+5 0 0
+1 30 1
+5 0 0
+1 46 1
+3 0 1
+Friend 42 15 0 0 3
+sword 2 2
+strength 2
+agility 0
+dagger 5 2
+strength 2
+agility 3
+axe 4 2
+strength 3
+agility 1
+1 39 1
+4 0 0
+1 49 1
+3 0 0
+1 46 1
+3 0 0
+1 62 1
+2 0 0
+1 56 1
+3 0 0
+1 81 1
+2 1 0
+elemental 48 15 0 0 1
+wand 4 3
+health 1
+intelect 2
+range 1
+9 1 4 7 0 0 0 0 1
+0 59 1
+3 0 0
+0 56 1
+3 0 0
+0 57 1
+3 0 1
+Friend 51 15 0 0 8
+dagger 3 2
+strength 1
+agility 2
+sword 3 2
+strength 2
+agility 1
+sword 4 2
+strength 3
+agility 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+bow 6 3
+strength 3
+agility 2
+range 1
+amulet 6 3
+health 3
+agility 2
+intelect 1
+bow 3 3
+strength 2
+agility 0
+range 1
+bow 3 3
+strength 2
+agility 0
+range 1
+0 3 1
+7 0 0
+0 69 1
+2 0 0
+0 66 1
+2 0 0
+0 54 1
+3 0 0
+0 -6 1
+7 0 0
+0 11 1
+6 0 1
+Friend 57 15 0 0 5
+ring 6 4
+health 1
+strength 1
+agility 2
+intelect 2
+crossbow 5 3
+strength 1
+agility 3
+range 1
+axe 2 2
+strength 2
+agility 0
+crossbow 5 3
+strength 2
+agility 2
+range 1
+bow 5 3
+strength 2
+agility 2
+range 1
+0 51 2
+8 0 0
+3 0 1
+Friend 58 15 1 0 7
+wand 5 3
+health 1
+intelect 3
+range 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+axe 4 2
+strength 4
+agility 0
+wand 5 3
+health 1
+intelect 3
+range 1
+axe 2 2
+strength 2
+agility 0
+amulet 5 3
+health 3
+agility 1
+intelect 1
+sword 4 2
+strength 3
+agility 1
+0 50 1
+3 0 0
+0 61 1
+2 0 0
+0 38 1
+4 0 0
+0 44 1
+4 0 0
+0 43 1
+4 0 0
+0 48 1
+3 1 0
+ogre 4 16 0 0 1
+amulet 5 3
+health 3
+agility 0
+intelect 2
+6 5 1 1 0 0 1 0 0
+0 29 1
+5 0 0
+0 22 1
+5 0 0
+0 22 2
+8 0 0
+5 0 0
+0 27 1
+5 0 0
+0 28 2
+8 0 0
+5 0 0
+0 33 1
+5 1 0
+vampire 10 16 0 0 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+5 5 3 4 0 1 0 0 1
+0 34 1
+5 0 0
+0 28 1
+5 0 0
+0 29 1
+5 0 0
+0 27 1
+5 0 0
+0 19 1
+5 0 0
+0 25 1
+5 0 0
+0 47 1
+3 0 0
+0 37 1
+4 0 0
+0 46 1
+3 0 0
+0 58 1
+3 0 0
+0 49 1
+3 0 0
+0 48 1
+3 0 0
+0 60 2
+8 0 0
+3 0 0
+0 49 1
+3 0 0
+0 55 1
+3 0 0
+0 53 1
+3 0 0
+0 54 1
+3 1 0
+imp 27 16 0 0 1
+dagger 4 2
+strength 1
+agility 3
+3 2 4 3 0 0 0 1 0
+0 49 1
+3 0 1
+Friend 28 16 0 0 5
+crossbow 6 3
+strength 2
+agility 3
+range 1
+bow 5 3
+strength 2
+agility 2
+range 1
+axe 4 2
+strength 3
+agility 1
+sword 3 2
+strength 2
+agility 1
+amulet 4 3
+health 2
+agility 2
+intelect 0
+0 39 1
+4 0 0
+0 42 1
+4 0 0
+0 35 1
+5 0 0
+1 32 1
+5 0 0
+1 34 1
+5 0 0
+1 41 1
+4 0 0
+1 35 1
+5 0 1
+Friend 35 16 0 0 4
+axe 4 2
+strength 4
+agility 0
+dagger 5 2
+strength 2
+agility 3
+wand 4 3
+health 1
+intelect 2
+range 1
+dagger 5 2
+strength 2
+agility 3
+1 21 1
+5 0 0
+1 33 1
+5 0 0
+1 26 1
+5 1 0
+imp 38 16 0 0 1
+axe 2 2
+strength 2
+agility 0
+5 1 4 4 0 0 0 1 0
+1 33 1
+5 0 0
+1 31 1
+5 0 0
+1 37 1
+4 0 0
+1 41 1
+4 1 0
+ogre 42 16 0 0 1
+amulet 4 3
+health 2
+agility 0
+intelect 2
+5 6 2 0 0 0 1 0 0
+1 42 1
+4 0 0
+1 55 1
+3 0 0
+1 53 2
+8 0 0
+3 0 0
+1 57 1
+3 1 0
+vampire 46 16 0 0 1
+wand 2 3
+health 0
+intelect 1
+range 1
+6 5 5 4 0 1 0 0 1
+1 57 1
+3 0 0
+1 72 1
+2 0 0
+0 62 1
+2 0 0
+0 58 2
+8 0 1
+Friend 50 16 0 0 6
+axe 4 2
+strength 4
+agility 0
+wand 4 3
+health 1
+intelect 2
+range 1
+wand 6 3
+health 1
+intelect 4
+range 1
+sword 2 2
+strength 1
+agility 1
+wand 5 3
+health 1
+intelect 3
+range 1
+wand 4 3
+health 1
+intelect 2
+range 1
+3 0 0
+0 44 1
+4 0 0
+0 19 1
+5 0 0
+0 63 1
+2 1 0
+orc 53 16 0 0 1
+ring 6 4
+health 1
+strength 2
+agility 2
+intelect 1
+8 4 0 0 0 0 0 0 0
+0 74 1
+2 0 0
+0 53 1
+3 0 1
+Friend 55 16 0 0 7
+sword 3 2
+strength 2
+agility 1
+bow 4 3
+strength 3
+agility 0
+range 1
+bow 3 3
+strength 2
+agility 0
+range 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+dagger 5 2
+strength 2
+agility 3
+dagger 4 2
+strength 1
+agility 3
+wand 3 3
+health 1
+intelect 1
+range 1
+0 28 1
+5 0 0
+0 52 1
+3 0 0
+0 59 1
+3 0 0
+0 43 1
+4 0 1
+Friend 59 16 0 0 7
+axe 3 2
+strength 3
+agility 0
+crossbow 4 3
+strength 1
+agility 2
+range 1
+dagger 2 2
+strength 1
+agility 1
+sword 3 2
+strength 3
+agility 0
+dagger 2 2
+strength 1
+agility 1
+axe 3 2
+strength 3
+agility 0
+bow 4 3
+strength 2
+agility 1
+range 1
+0 54 1
+3 0 0
+0 54 1
+3 0 0
+0 53 1
+3 1 0
+wolf 2 17 0 0 1
+amulet 4 3
+health 2
+agility 1
+intelect 1
+5 6 5 3 0 1 0 0 0
+0 45 1
+4 0 0
+0 36 1
+4 0 0
+0 40 1
+4 0 1
+Friend 5 17 0 0 9
+sword 4 2
+strength 2
+agility 2
+crossbow 5 3
+strength 2
+agility 2
+range 1
+sword 2 2
+strength 2
+agility 0
+axe 2 2
+strength 2
+agility 0
+crossbow 6 3
+strength 2
+agility 3
+range 1
+ring 4 4
+health 1
+strength 1
+agility 1
+intelect 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+ring 5 4
+health 1
+strength 1
+agility 2
+intelect 1
+ring 6 4
+health 1
+strength 2
+agility 2
+intelect 1
+0 29 1
+5 0 0
+0 29 1
+5 0 0
+0 37 1
+4 0 0
+0 33 1
+5 0 0
+0 25 1
+5 0 0
+0 33 1
+5 1 0
+vampire 11 17 0 0 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+5 6 4 2 0 1 0 0 1
+0 31 1
+5 0 0
+0 14 1
+6 0 0
+0 29 1
+5 0 0
+0 32 1
+5 0 0
+0 29 1
+5 0 0
+0 43 1
+4 0 0
+0 37 1
+4 0 0
+0 40 1
+4 0 0
+0 50 1
+3 0 0
+0 55 1
+3 0 0
+0 45 1
+4 0 0
+0 59 1
+3 0 1
+Friend 23 17 0 0 11
+bow 5 3
+strength 3
+agility 1
+range 1
+ring 5 4
+health 1
+strength 1
+agility 1
+intelect 2
+bow 5 3
+strength 3
+agility 1
+range 1
+axe 4 2
+strength 3
+agility 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+amulet 1 3
+health 1
+agility 0
+intelect 0
+bow 5 3
+strength 2
+agility 2
+range 1
+wand 5 3
+health 1
+intelect 3
+range 1
+wand 6 3
+health 1
+intelect 4
+range 1
+ring 7 4
+health 2
+strength 2
+agility 2
+intelect 1
+axe 3 2
+strength 2
+agility 1
+0 52 1
+3 0 0
+0 49 1
+3 0 0
+0 52 1
+3 0 0
+0 49 1
+3 0 0
+0 52 1
+3 0 0
+0 47 1
+3 1 0
+vampire 29 17 0 0 1
+dagger 3 2
+strength 1
+agility 2
+5 6 4 4 0 1 0 0 1
+0 46 1
+3 0 0
+0 36 1
+4 0 0
+1 31 1
+5 0 0
+1 32 1
+5 0 0
+1 30 1
+5 0 0
+1 33 1
+5 0 0
+1 38 1
+4 0 0
+1 39 1
+4 0 0
+1 19 1
+5 0 0
+1 19 1
+5 0 1
+Friend 39 17 0 0 5
+sword 5 2
+strength 3
+agility 2
+wand 4 3
+health 1
+intelect 2
+range 1
+wand 3 3
+health 1
+intelect 1
+range 1
+amulet 2 3
+health 1
+agility 0
+intelect 1
+sword 5 2
+strength 3
+agility 2
+1 33 1
+5 0 0
+1 39 1
+4 0 0
+1 46 1
+3 0 0
+1 43 1
+4 0 0
+1 55 1
+3 0 0
+1 56 1
+3 0 0
+1 67 1
+2 0 0
+1 62 1
+2 0 0
+1 71 1
+2 1 0
+orc 48 17 0 0 1
+ring 6 4
+health 1
+strength 2
+agility 1
+intelect 2
+6 5 1 1 0 0 0 0 0
+0 64 1
+2 0 1
+Friend 49 17 0 0 8
+wand 4 3
+health 0
+intelect 3
+range 1
+amulet 2 3
+health 1
+agility 0
+intelect 1
+sword 4 2
+strength 2
+agility 2
+sword 2 2
+strength 1
+agility 1
+amulet 4 3
+health 2
+agility 0
+intelect 2
+axe 5 2
+strength 4
+agility 1
+ring 6 4
+health 1
+strength 1
+agility 2
+intelect 2
+sword 3 2
+strength 1
+agility 2
+0 75 1
+2 0 0
+0 75 1
+2 0 0
+0 50 1
+3 0 0
+0 32 1
+5 0 0
+0 47 1
+3 0 0
+0 34 1
+5 1 0
+orc 55 17 0 0 1
+axe 4 2
+strength 4
+agility 0
+5 3 1 0 0 0 0 0 0
+0 52 1
+3 0 0
+0 40 1
+4 0 0
+0 48 1
+3 0 0
+0 59 1
+3 0 0
+0 47 1
+3 0 0
+0 54 1
+3 0 0
+0 48 1
+3 0 1
+Friend 2 18 0 0 11
+ring 8 4
+health 2
+strength 2
+agility 2
+intelect 2
+axe 3 2
+strength 3
+agility 0
+crossbow 4 3
+strength 1
+agility 2
+range 1
+sword 3 2
+strength 2
+agility 1
+axe 4 2
+strength 3
+agility 1
+axe 4 2
+strength 4
+agility 0
+dagger 4 2
+strength 1
+agility 3
+ring 5 4
+health 1
+strength 1
+agility 1
+intelect 2
+sword 3 2
+strength 3
+agility 0
+dagger 2 2
+strength 1
+agility 1
+amulet 2 3
+health 1
+agility 0
+intelect 1
+0 44 1
+4 0 0
+0 42 1
+4 0 0
+0 45 1
+4 0 0
+0 41 1
+4 1 0
+imp 6 18 0 0 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+4 1 6 2 0 0 0 1 0
+0 28 1
+5 0 0
+0 40 1
+4 0 0
+0 40 1
+4 0 0
+0 36 1
+4 0 1
+Friend 10 18 0 0 4
+bow 5 3
+strength 3
+agility 1
+range 1
+bow 6 3
+strength 3
+agility 2
+range 1
+amulet 5 3
+health 2
+agility 1
+intelect 2
+axe 4 2
+strength 4
+agility 0
+0 25 1
+5 0 0
+0 33 1
+5 0 0
+0 28 1
+5 0 0
+0 27 1
+5 0 0
+0 24 1
+5 0 0
+0 25 1
+5 0 0
+0 36 1
+4 1 0
+vampire 17 18 0 0 1
+amulet 6 3
+health 2
+agility 2
+intelect 2
+4 5 3 3 0 1 0 0 1
+0 39 1
+4 0 0
+0 49 1
+3 0 0
+0 40 1
+4 0 0
+0 45 1
+4 0 0
+0 38 1
+4 1 0
+elemental 22 18 0 0 1
+axe 4 2
+strength 4
+agility 0
+8 3 3 7 0 0 0 0 1
+0 43 1
+4 0 0
+0 59 1
+3 0 0
+0 47 1
+3 0 0
+0 45 1
+4 1 1
+orc 26 18 0 0 1
+bow 4 3
+strength 2
+agility 1
+range 1
+8 5 3 0 0 0 0 0 0
+Friend 26 18 0 0 9
+ring 6 4
+health 1
+strength 1
+agility 2
+intelect 2
+bow 4 3
+strength 3
+agility 0
+range 1
+ring 6 4
+health 2
+strength 1
+agility 2
+intelect 1
+sword 1 2
+strength 1
+agility 0
+sword 5 2
+strength 3
+agility 2
+crossbow 6 3
+strength 2
+agility 3
+range 1
+sword 4 2
+strength 2
+agility 2
+sword 2 2
+strength 1
+agility 1
+amulet 4 3
+health 3
+agility 0
+intelect 1
+0 44 1
+4 0 0
+0 40 1
+4 0 0
+0 43 1
+4 0 0
+0 44 1
+4 0 0
+0 37 1
+4 0 0
+1 42 1
+4 1 0
+ogre 32 18 0 0 1
+dagger 3 2
+strength 2
+agility 1
+6 5 2 1 0 0 1 0 0
+1 35 1
+5 0 0
+1 33 1
+5 1 0
+imp 34 18 0 0 1
+bow 6 3
+strength 3
+agility 2
+range 1
+4 2 5 2 0 0 0 1 0
+1 36 1
+4 1 0
+dragon 35 18 0 0 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+22 9 4 4 1 0 0 1 0
+1 27 1
+5 0 0
+1 36 1
+4 0 1
+Friend 37 18 0 0 5
+crossbow 5 3
+strength 1
+agility 3
+range 1
+axe 5 2
+strength 4
+agility 1
+amulet 3 3
+health 1
+agility 2
+intelect 0
+wand 5 3
+health 0
+intelect 4
+range 1
+ring 6 4
+health 1
+strength 2
+agility 1
+intelect 2
+1 25 1
+5 0 0
+1 34 1
+5 0 0
+1 28 1
+5 1 0
+dragon 40 18 0 0 1
+amulet 3 3
+health 2
+agility 0
+intelect 1
+26 8 6 4 1 0 0 1 0
+1 30 1
+5 1 1
+ogre 41 18 0 0 1
+bow 5 3
+strength 3
+agility 1
+range 1
+5 6 2 0 0 0 1 0 0
+Friend 41 18 0 0 9
+dagger 3 2
+strength 2
+agility 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+sword 2 2
+strength 1
+agility 1
+bow 5 3
+strength 2
+agility 2
+range 1
+bow 5 3
+strength 2
+agility 2
+range 1
+axe 4 2
+strength 3
+agility 1
+bow 4 3
+strength 3
+agility 0
+range 1
+crossbow 6 3
+strength 2
+agility 3
+range 1
+crossbow 5 3
+strength 1
+agility 3
+range 1
+1 41 1
+4 0 0
+1 47 1
+3 0 0
+1 42 1
+4 0 0
+1 56 1
+3 0 0
+1 58 1
+3 0 0
+1 57 1
+3 0 0
+1 59 1
+3 0 0
+0 69 1
+2 0 0
+0 69 1
+2 0 0
+0 75 1
+2 0 0
+0 73 1
+2 0 1
+Friend 52 18 0 0 10
+crossbow 4 3
+strength 1
+agility 2
+range 1
+axe 4 2
+strength 3
+agility 1
+sword 2 2
+strength 2
+agility 0
+dagger 4 2
+strength 2
+agility 2
+bow 6 3
+strength 3
+agility 2
+range 1
+crossbow 4 3
+strength 1
+agility 2
+range 1
+dagger 4 2
+strength 2
+agility 2
+bow 3 3
+strength 2
+agility 0
+range 1
+dagger 3 2
+strength 2
+agility 1
+axe 3 2
+strength 2
+agility 1
+0 71 1
+2 0 0
+0 21 1
+5 0 0
+0 26 1
+5 0 0
+0 44 1
+4 0 0
+0 54 1
+3 0 0
+0 32 1
+5 0 0
+0 43 1
+4 0 0
+0 45 1
+4 0 0
+0 55 1
+3 1 0
+ghoul 1 19 0 0 1
+wand 4 3
+health 1
+intelect 2
+range 1
+2 4 1 0 0 0 0 0 0
+0 56 1
+3 0 0
+0 49 1
+3 0 0
+0 50 1
+3 0 0
+0 36 1
+4 0 0
+0 41 1
+4 0 0
+0 44 1
+4 0 0
+0 25 1
+5 0 0
+0 44 1
+4 0 0
+0 34 1
+5 0 1
+Friend 10 19 0 0 5
+sword 4 2
+strength 2
+agility 2
+bow 3 3
+strength 2
+agility 0
+range 1
+wand 5 3
+health 0
+intelect 4
+range 1
+amulet 3 3
+health 2
+agility 1
+intelect 0
+amulet 6 3
+health 3
+agility 2
+intelect 1
+0 36 1
+4 0 0
+0 29 1
+5 1 0
+wolf 12 19 0 0 1
+sword 3 2
+strength 1
+agility 2
+4 3 4 3 0 1 0 0 0
+0 37 1
+4 0 0
+0 22 1
+5 0 0
+0 19 1
+5 0 0
+0 27 1
+5 1 0
+elemental 16 19 0 0 1
+bow 4 3
+strength 3
+agility 0
+range 1
+9 3 4 6 0 0 0 0 1
+0 27 1
+5 0 0
+0 34 1
+5 0 0
+0 24 1
+5 0 0
+0 40 1
+4 0 0
+0 39 1
+4 0 0
+0 29 1
+5 1 0
+elemental 22 19 0 0 1
+sword 4 2
+strength 2
+agility 2
+9 2 4 7 0 0 0 0 1
+0 41 1
+4 0 0
+0 47 1
+3 0 0
+0 47 1
+3 0 0
+0 38 1
+4 0 0
+0 41 1
+4 0 0
+0 49 1
+3 0 0
+0 36 1
+4 0 0
+0 36 1
+4 0 0
+0 31 1
+5 0 0
+0 27 1
+5 0 0
+0 35 1
+5 0 0
+0 33 1
+5 0 0
+0 36 1
+4 0 1
+Friend 35 19 0 0 5
+bow 4 3
+strength 3
+agility 0
+range 1
+wand 5 3
+health 0
+intelect 4
+range 1
+dagger 4 2
+strength 2
+agility 2
+dagger 3 2
+strength 2
+agility 1
+crossbow 5 3
+strength 2
+agility 2
+range 1
+0 32 1
+5 0 0
+0 34 1
+5 0 0
+0 27 1
+5 0 0
+0 26 1
+5 0 0
+0 33 1
+5 0 0
+0 30 1
+5 0 0
+0 45 1
+4 0 0
+0 46 1
+3 0 0
+0 39 1
+4 1 1
+dragon 44 19 0 0 1
+ring 7 4
+health 2
+strength 1
+agility 2
+intelect 2
+20 4 3 3 1 0 0 1 0
+Friend 44 19 0 0 4
+bow 6 3
+strength 3
+agility 2
+range 1
+amulet 2 3
+health 2
+agility 0
+intelect 0
+sword 4 2
+strength 2
+agility 2
+ring 7 4
+health 1
+strength 2
+agility 2
+intelect 2
+0 51 1
+3 0 0
+0 57 1
+3 0 0
+0 57 1
+3 0 0
+0 63 2
+8 1 0
+dragon 48 19 0 0 1
+dagger 3 2
+strength 1
+agility 2
+30 5 5 2 1 0 0 1 0
+2 0 0
+0 53 1
+3 1 0
+vampire 49 19 0 0 1
+dagger 3 2
+strength 1
+agility 2
+4 5 3 2 0 1 0 0 1
+0 66 1
+2 0 0
+0 62 1
+2 0 0
+0 67 1
+2 0 0
+0 46 1
+3 0 0
+0 31 1
+5 0 0
+0 43 1
+4 0 0
+0 48 1
+3 0 0
+0 70 1
+2 0 0
+0 52 1
+3 0 0
+0 57 1
+3 0 0
+9
+1
+29 11
+1
+59 3
+2
+41 7
+35 16
+2
+33 7
+35 16
+2
+40 1
+35 16
+1
+19 18
+2
+16 6
+35 16
+2
+34 7
+35 16
+2
+53 18
+35 16

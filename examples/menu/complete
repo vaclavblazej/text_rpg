@@ -1,0 +1,15 @@
+friend
+help=talkHelp
+help-map=mapHelp
+help-class=classHelp
+bye=goodbye
+offer=offer
+buy=buy
+buy-map=buyMap
+sell=sell
+items=lig
+reward=reward
+quest=quest
+q=lq
+quit=exit
+exit=exit

@@ -1,0 +1,26 @@
+Help: editor mode
+ You are in editor mode.
+ These commands are available:
+  help          = show this help
+  help-map      = show help about map
+  help-class    = show help about classes
+  play          = change your mode to normal (exit editor mode)
+  map           = show map
+  world <X> <Y> = create new world which is <X> wide and <Y> high
+  player <name> <hitpoints> <strength> <agility> <intelect>
+                = create players character with apropriate stats
+  port <X> <Y>  = port player onto <X>, <Y> position in the map
+  q             = list all quests
+  item          = create custom item and give it to the player
+  items         = show all players items
+  delworld      = delete world
+  delplayer     = delete players character
+  delall        = delete world and players character
+  ls            = show all saved games
+  ss            = quicksave saves your game into tmp.txt file
+  save <name>   = save your game into <name>.txt file
+  ll            = quickload loads game from tmp.txt file
+  load <name>   = show all saved games and loads <name>.txt
+  drop <index>  = give away item on <index> position (from items command)
+  stats         = show stats of the player
+  q/quit/exit   = exit game

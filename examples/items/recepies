@@ -1,0 +1,27 @@
+sekera   = topůrko čepel
+meč      = rukojeť čepel
+dýka     = rukojeť čepel
+amulet   = provázek železo
+hůlka    = klacík
+luk      = lučiště tětiva
+kuš      = lučiště klacík tětiva
+prsten   = drahokam železo
+
+čepel    = železo
+topůrko  = větev
+rukojeť  = klacík
+provázek = vlákno
+železo   = ruda
+lučiště  = větev
+tětiva   = provázek
+
+drahokam = TEST
+klacík   = TEST
+
+čepel    = sekera
+čepel    = meč
+čepel    = dýka
+železo   = amulet
+lučiště  = luk
+lučiště  = kuš
+drahokam = prsten

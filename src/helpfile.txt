@@ -1,0 +1,8 @@
+General help:
+Version was released on 13.6.2013
+Version 1.0
+Author: Václav Blažej
+- This is not help for the game. Too see one,
+  try to find it in game folder or on websites.
+- Generate documentation for this programm
+  by typing 'make doc' and see the main page.

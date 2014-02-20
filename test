@@ -1,0 +1,33 @@
+Loading config file...
+Loading variables...
+Loading functions...
+Program started without errors.
+Version 0.4
+For more info start with: --help 
+If you are confused type 'help'
+For free!
+menu$ opening: ./examples/help/menuhelp
+Help: normal
+ You are in normal phase.
+ There you can manage and play your game.
+ -general
+  help          = show help
+  classes       = show information about all classes
+  newgame       = create new game
+  ls            = show all saved games
+  ss            = quicksave saves your game into tmp.txt file
+  save <name>   = save your game into <name>.txt file
+  ll            = quickload loads game from tmp.txt file
+  load <name>   = show all saved games and loads <name>.txt
+  quit/exit   = exit game
+ -gameplay
+  w/s/a/d       = move up/down/left/right and show map
+  q             = list all quests
+  items         = show all players items and gold
+  map           = show map
+  stats         = show stats of the player
+  fight         = enter fight against creature in the same area player is in
+  loot          = get all items killed creature dropped
+  talk          = talk with ally creature in the same area player is in
+  drop <index>  = give away item on <index> position (from items command)
+menu$ quit

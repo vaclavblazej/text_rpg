@@ -1,0 +1,5 @@
+int  health
+int  strength
+int  agility
+int  intelect
+bool range

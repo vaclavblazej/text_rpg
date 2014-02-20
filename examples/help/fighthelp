@@ -1,0 +1,20 @@
+Help: combat phase
+ You are in fight against enemy creature.
+ Your options are:
+  help          = show this help
+  help-map      = show help about map
+  help-class    = show help about classes
+  info         = show stats of your character and enemy creature
+  hit          = attack enemy creature - common attack
+  bash         = attack enemy creature - high chance to critical
+  slash        = attack enemy creature - high chance to dodge
+  block        = attack enemy creature - high chance to block
+  flee/re/retreat
+               = try to escape from fight (enemy still hits you
+                 and you have to move to another location)
+  map          = show map
+  items        = show items players character have
+  q            = list all quests
+  drop <index> = give away item on <index> position (from items command)
+  stats        = show your stats
+  quit/exit    = exit game

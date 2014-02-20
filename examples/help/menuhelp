@@ -1,0 +1,24 @@
+Help: normal
+ You are in normal phase.
+ There you can manage and play your game.
+ -general
+  help          = show this help
+  help-map      = show help about map
+  help-class    = show help about classes
+  newgame       = create new game
+  ls            = show all saved games
+  ss            = quicksave saves your game into tmp.txt file
+  save <name>   = save your game into <name>.txt file
+  ll            = quickload loads game from tmp.txt file
+  load <name>   = show all saved games and loads <name>.txt
+  quit/exit   = exit game
+ -gameplay
+  w/s/a/d       = move up/down/left/right and show map
+  q             = list all quests
+  items         = show all players items and gold
+  map           = show map
+  stats         = show stats of the player
+  fight         = enter fight against creature in the same area player is in
+  loot          = get all items killed creature dropped
+  talk          = talk with ally creature in the same area player is in
+  drop <index>  = give away item on <index> position (from items command)

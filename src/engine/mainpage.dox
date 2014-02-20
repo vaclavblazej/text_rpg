@@ -1,0 +1,276 @@
+/*!
+ * \mainpage Engine pro textové RPG.
+ *
+ * Tento program implementuje rozhraní pro vytváření jednoduché textové RPG hry.
+ *
+ * \attention Tento program sám o sobě neimplementuje hru. Pokud chcete spustit hru a máte problém viz \ref nahrani.
+ * 
+ * \section spusteni Spuštění
+ *
+ * \subsection prikaz_spusteni Spuštění
+ * Program se spouští příkazem:
+ * \code
+ * make run
+ * \endcode
+ * nebo
+ * \code
+ * ./blazeva1
+ * \endcode
+ * Pokud tento příkaz nefunguje, proveďte kompilaci (viz \ref kompilace).
+ * \subsection kompilace Kompilace
+ * Příkaz pro zkompilování programu:
+ * \code
+ * make compile
+ * \endcode
+ * \subsection dokumentace Dokumentace
+ * Příkaz pro vytvoření této dokumentace:
+ * \code
+ * make doc
+ * \endcode
+ * \subsection promazani Promazání
+ * Tento příkaz promaže všechny nutně nepotřebné soubury programu. Program nebude schopen spuštění.
+ *
+ * Nemá vliv na uložené hry.
+ * \code
+ * make clean
+ * \endcode
+ *
+ * \section nahrani Nahrání hry
+ * K tomu aby bylo možné hru hrát, je potřeba provést následující:
+ * \li Získat hru.
+ * \li Přesunout složku s hrou do složky s tímto enginem tj. "vedle" src.
+ * \li V souboru "./src/config.txt" změnit proměnnou GAME_DIRECTORY na složku s nahrávanou hru. (př. "moje_hra")
+ *
+ * Pak už stačí program zapnout (viz \ref spusteni) a pokud se spustí bez chyb, tak je hra nahraná správně.
+ * 
+ * \subsection nahravani_chyby Chyby při nahrávání
+ * Následuje seznam jednotlivých chyb a postup jejich opravy:
+ *
+ * \li ERROR: Config file is missing!
+ *
+ * Přidejte do složky "./src/" soubor "config.txt" s následujícím obsahem:
+ * \code
+ * GAME_DIRECTORY=loaded_game
+ * COLOR=1
+ * \endcode
+ * Nahraďte "loaded_game" jménem složky se hrou, kterou chcete načíst a "1" přepište na 0 pokud nemáte barevný terminál.
+ *
+ * \li ERROR: Game directory not defined! (in ./src/config.txt)
+ *
+ * V souboru "config.txt" není u GAME_DIRECTORY napsána žádná složka, připište jméno složky se hrou k proměnné "GAME_DIRECTORY=".
+ *
+ * \li ERROR: Structure file is missing!
+ *
+ * Nebyl nalezen soubor hry definující její strukturu. Buď je v souboru "config.txt" špatně nsatavená proměnná GAME_DIRECTORY nebo složka hry, která je nastavená touto proměnnou neexistuje nebo je soubor "structure.txt" uvnitř hry poškozen nebo špatně pojmenován. Podle situace tedy přepište hodnotu GAME_DIRECTORY na existující hru nebo správně pojmenujte soubor "structure.txt"
+ *
+ * \li ERROR: Directory with xxxxxxxxx was not defined in structure.txt file in game directory!
+ *
+ * Souboru "structure.txt" obsahuje tento text:
+ * \code
+ * ITEM_DIRECTORY=items
+ * CREATURE_DIRECTORY=creatures
+ * MENU_DIRECTORY=menu
+ * SAVE_DIRECTORY=saves
+ * START_PLAY=mainmenu
+ * START_EDIT=emode
+ * \endcode
+ * Pokud některá z techto proměnných chybí, tak ji přidejte na nový řádek a definujte ji. Pro představu je zde napsáno co proměnné definují. Proměnné x_DIRECTORY popisují, kde se nachází složka s příslušnými soubory (odshora: předměty, jednotky, nabídky, uložené hry). Proměnná START_PLAY definuje, které menu se zapne při běžném spuštění hry a START_EDIT definuje, které menu se zapne při spuštění hry v editovacím modu (tj. s přepínačem -e).
+ *
+ * \li ERROR: Script file is missing!
+ *
+ * Souboru "scripts.txt" neexistuje. Jelikož tento soubor definuje chování hry, nemá cenu jej vyrábět znovu pokud se nezajímáte o vytváření vlastní hry. Zkontrolujte jestli nemá název souboru překlep ve jméně, ale pokud zcela chybí, tak je potřeba se znovu podívat na postup, kterým jste se ke konkrétní hře dostali, jestli se soubor v někde nevytratil.
+ *
+ * \li ERROR: Help file not found!
+ *
+ * Neexistuje soubor "./src/helpfile.txt". Ten by měl osvětlovat chování engeenu a říct, že všechny potřebné informace najdete v dokumentaci, není tedy potřeba. Je ale nutné zaznamenat fakt, že soubor měl být dostupný, takže složka se zdrojovými kódy engeenu je pravděpodobně poškozená. V tomto případě bude možné program spustit, ale nepůjde zkompilovat.
+ *
+ * \li jiná chybová hláška
+ *
+ * Další chyby souvisí s během samotné hry, což je nad rámec tédo dokumentace. Pokud nějakou takovou chybu hledáte, mělo by ji být možné najít v dokumentaci samotné hry. Tato dokumentace nemusí existovat ve složce hry, v tom případě se obraťte na stránky hry, které by měly být uvedené buď při spuštění nebo ve složce s hrou.
+ *
+ * \section vyroba Výroba hry
+ *
+ * \subsection prvky Poskytnuté prvky
+ *
+ * Engine poskytuje tyto základní logické prvky:
+ * \li Mapu
+ * \li Postavu hráče
+ * \li Nepřátelské jednotky
+ * \li Spřátelené jednotky
+ * \li Předměty
+ * \li Úkoly
+ *
+ * \subsection nastaveni_adresare Nastavení adresáře s hrou
+ *
+ * Ve složce ./src/ je soubor "config.txt" ve kterém se definuje cesta k aktuálně nahrávané hře.
+ * Nastavte proměnnou GAME_DIRECTORY na adresář s Vaší hrou (tvar zápisu je "moje_hra"). Relativní adresa je od adresáře enginu.
+ *
+ *
+ * \subsection struktura Struktura enginu
+ *
+ * Následující část popisuje fungování enginu.
+ *
+ * \subsection nahravani Nahrávání
+ *
+ * Při zapnutí programu se ze složky "./src/config.txt" nahrají informace o umístění složek a souborů hry, kterou má program zapnout. Hru vyhledá a nahraje. Nahrávají se dva hlavní soubory hry. První se jmenuje "structure.txt" a definuje jména jednotlivých složek, ze kterých se budou načítat různé prvky hry. Druhý je soubor se scriptovacími funkcemi "scripts.txt". Tyto funkce definují chování programu a jejich pochopení je hlavní součístí výroby hry. Dále tu jsou kontextová menu, načtené podle proměnné souboru "structure.txt" MENU_DIRECTORY, ty zařizují překlad příkazů od uživatele na funkce (viz \ref preklad). Následuje nahrání vzorů pro předměty a jednotky (podle ITEM_DIRECTORY a CREATURE_DIRECTORY). Ty definují jaké předměty a jednotky se při vytvéření světa mohou vygenerovat a jaké mají vlastnosti. Tím skončilo nahrávání a program vypíše, jak nahrávání dopadlo (pro chyby viz \ref nahravani_chyby).
+ *
+ *
+ * \subsection syntax Syntaxe příkazů
+ *
+ * Syntaxe vypadá následovně:
+ * \code
+ * ;název=příkaz ( parametry , ... )
+ * \endcode
+ * Popis prvků:
+ * \li Středník je na začátku každáho příkazu.
+ * \li Název přákazu hned je za středníkem.
+ * \li Rovnítko je hned za názvem příkazu.
+ * \li Příkaz je kdekoli za rovnítkem (nepovinná mezera).
+ * \li Začáteční závorka za příkazem s mezerou (povinná mezera).
+ * \li Paramtry za začáteční závorkou s mezerou (povinná mezera).
+ * \li Další parametry oddělená mezi sebou čárkami s mezerami ve tvaru: " , " (povinné mezery).
+ * \li Uzavírací závorka za posledním parametrem s mezerou (povinná mezera)., ")
+ * \li ...další příkaz.
+ * Na místě keždé povinné mezery musí v příkazu být alespoň jedna mezera (může se i odřádkovat), tak program rozpoznává příkazy od ostatních znaků.
+ * 
+ *
+ * \subsection preklad Překlad příkazů
+ *
+ * Nahraje se první menu, které definuje dostupné příkazy. Zapne se hlavní cyklus programu. Ten na vstupu očekává příkazy od uživate a překládá je na nascriptované funkce.
+ *
+ * V nascriptovaných funkcích ja hlavní jádro fungování hry jako např. vykreslení mapy, rozhovory s jednotkami, možnosti v souboji, pohyb po mapě a mnohé další. Informace o všech dostupných scriptech je možné najít v sekci níže (viz \ref scripty).
+ *
+ * \subsection scripty Seznam příkazů
+ * Struktura:
+ *
+ * \li [jméno scriptu]	( [názorné použití parametrů] ) [popis co script dělá]
+ *
+ * Scripty scénáře:
+ * 
+ * \li set	( "proměnná" [, hodnota] )	nahraje do proměnné hodnotu, vrátí velikost proměnné
+ * \li increase	( "proměnná" , hodnota )	proměnnou zvětší o hodnotu, vrátí velikost proměnné
+ * \li resetVars	zruší všechny proměnné
+ * \li listSaves	vypíše seznam všech uložených her
+ * \li save	( "soubor" )	uloží hru ze souboru
+ * \li load	( "soubor" )	nahraje uloženou hru ze souboru
+ * \li newWorld	( šířka , výška )	vytvoří svět s danou výškou šířkou
+ * \li delWorld	smaže svět
+ * \li printMap	vykreslí mapu
+ * \li revealMap	[( [x , y ,] okolí )]	odhalí mapu celou nebo v daném okolí na místě hráče / daném místě
+ * \li newPlayer	( "jméno" , povolání , životy , síla , obratnost , inteligence , )	vytvoří hráčovu postavu podle parametrů
+ * \li delPlayer		smaže hráčovu postavu
+ * \li stats		vypíše statistiky o hráči
+ * \li coords		vypíše souřadnice hráče
+ * \li move	( {up/down/left/right/} )	posune hráče na danou stranu o jedno pole
+ * \li port	( x , y )	teleportuje hráče na x, y souřadnice
+ * \li gItemRand		dá hráči náhodný předmět
+ * \li gItemCust	( "jméno" , životy , síla , obratnost , inteligence , range? )	dá hráči předmět definovaný parametry
+ * \li remItem	( index ) odebere hráči předmět z indexu a přesune ho na loot
+ * \li listItems		vypíře předměty, které má hráč
+ * \li delItem	( index )	smaže předmět z indexu
+ * \li crQuest		vyrvoří nový úkol
+ * \li listQuest		vypíše všechny právě prováděné úkoly
+ * \li chckQuest		zkontroluje dokončení úkolů, vrací počet dokončených úkolů
+ * \li enc		vrací hodnotu podle toho, koho hráč potkal - 0 nepřítel, 1 přítel
+ * \li fightInfo		vypíše informace o bitvě
+ * \li fight		provede výměnu poškození mezi jednotkami v bitvě
+ * \li showLoot		vypíše loot předměty
+ * \li takeLoot		vezme loot předměty a vrátí, kolik má hráč předmětů
+ * \li delLoot		smaže loot
+ * \li goods		vypíše předměty nabízené spřátelenou jednotkou
+ * \li pay		( množství )	pokusí se odebrat hráči zlato, pokud nemá dost vrátí 0, jinak 1
+ * \li buyItem	( index )	koupí předmět na indexu	
+ * \li sellItem	( index )	prodá předmět na indexu
+ * \li course		vrátí směnný kurz spřátelené jednotky na stejném poli jako hráč v procentech
+ * \li quit		opustí hru
+ *
+ *
+ * Scripty menu:
+ * \li commands	vypíše dostupné příkazy
+ * \li printFile	vypíše obsah souboru
+ * \li menu	přepne kontext menu (přemaže nynější)
+ * \li pushMenu	přepne kontext menu (uloží staré)
+ * \li popMenu	přepne kontext menu (načte staré)
+ *
+ *
+ * Logické, matematické, V/V a další podpurné scripty:
+ * \li eval	( parametry ... )	vyhodnotí všechny parametry
+ * \li max	( parametry ... )	vrátí maximum ze všech argumentů
+ * \li min	( parametry ... )	vrátí minimum ze všech argumentů
+ * \li sum	( parametry ... )	vrátí součet všech argumentů
+ * \li avg	( parametry ... )	vrátí průměr všech argumentů
+ * \li mod	( číslo , parametry ... )	vrátí modulo šísla vůči všem argumentům
+ * \li gStr		vrátí řetězec vložený uživatelem
+ * \li gInt		vrátí celé číslo vložené uživatelem
+ * \li if	( podmínka , splnění , nesplnění )	vyhodnoutí pouze příslušný parametr
+ * \li equal	( parametry ... )	vrací 1 pokud se všechny parametry, jinak 0
+ * \li great	( číslo1 , číslo2 )	vrací 1 pokud je číslo1 ostře větší než číslo2, jinak 0
+ * \li switch	( index , parametry ... )	vyhodnoutí pouze parametr na pozici definované indexem (od 0)
+ * \li rerand	( parametry ... )	vrátí náhodný parametr
+ * \li recust	( index , parametry ... )	vyhodnoutí všechny parametry a vrátí hodnotu toho, který je na indexu (od 1)
+ * \li print	( parametry ... )	vypíše všechny parametry bez mezer, na konci odřádkuje
+ * \li while	( parametry ... )	vyhodnocuje všechny parametry dokud je první roven 0
+ * \li repeat	( opakování , parametry ... )	opakuje vyhodnocení parametrů podle čísla opakování
+ *
+ *
+ * \subsection priklady Příklady scriptování
+ *
+ * Chceme napsat script, který umožňuje hráči pohyb po mapě:
+ * \li vytvoříme ve složce se hrou složku menu
+ * \li ve složce menu vytvoříme soubor mainmenu.txt
+ * \li v souboru structure.txt nastavíme MENU_DIRECTORY a START_PLAY
+ * \code
+ * MENU_DIRECTORY=menu
+ * START_PLAY=mainmenu.txt
+ * \endcode
+ * \li definujeme příkazy, které může hráč používat pro pohyb do souboru mainmenu.txt
+ * \code
+ * w=goUp
+ * s=goDown
+ * a=goLeft
+ * d=goRight
+ * \endcode
+ * \li definujeme příslušné scripty v souboru scripts.txt
+ * \code
+ * goUp=move ( "up" )
+ * goDown=move ( "down" )
+ * goLeft=move ( "left" )
+ * goRight=move ( "right" )
+ * \endcode
+ *
+ * Chceme napsat script, který počítá score hráče.
+ * \li Při každém vytvoření hry nastavíme proměnnou:
+ * \code
+ * set ( "název" )
+ * \endcode
+ * \li Pro zvýšení score zvětšíme proměnnou:
+ * \code
+ * increase ( "název" , konstanta )
+ * \endcode
+ * \li Po skončení vypíšeme:
+ * \code
+ * print ( set ( "název" ) )
+ * \endcode
+ *
+ * Chceme napsat script, který vypíše pomocná data (pro help).
+ * \li v naší hře vytvoříme složku 'help' se souborem 'edithelp.txt'
+ * \li napíšeme příkaz, který může hráč zavolat (do souboru s nahraným menu):
+ * \code
+ * help=playhelp
+ * \endcode
+ * \li definujeme macro, na které jsme se odkázali:
+ * \code
+ * ;playhelp=printFile ( "help/edithelp"  )
+ * \endcode
+ *
+ * Chceme napsat script, který ukončí hru po dosažení score 10:
+ * \li napíšeme macro, které kontroluje podmínku:
+ * \code
+ * endGameMacro=if ( great ( 9 , set ( "score" ) ) ,
+                     eval ( print ( "You got 10 score!" ) ,
+                            print ( "Now the game will close" ) ,
+                            quit ) )
+ * \endcode
+ * \li toto macro použijeme na místech, kde chceme podmínku zkontrolovat a případně provést výpis zprávy a ukončení celé hry
+ * 
+ */

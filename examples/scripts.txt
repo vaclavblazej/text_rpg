@@ -1,0 +1,186 @@
+;init=eval ( set ( "blackAndWhite" , 0 ) ,
+             set ( "score" , 0 ) ,
+             set ( "finalGoal" , 0 ) ,
+             print ( "Program spuštěn bez chyb." ) ,
+             print ( "Verze 0.5" ) ,
+             print ( "For more info start with: --help " ) ,
+             print ( "Jestli jsi zmatený, napiš 'help'" ) ,
+             print ( rerand ( "Není hotovo!" ,
+                              "Rozpracované!" ,
+                              "Pouze alfa!" ,
+                              "Zdarma!" ,
+                              "v0.6 Již brzy!" ,
+                              "Na 99.9% dokonalé!" ,
+                              "Poslední pád v v0.2!" ) ) )
+
+;cheatGold=pay ( recust ( 2 , print ( "Kolik chceš odebrat zlata:" ) , gInt ) )
+;cheatItem=eval ( print ( "Vytvoř předmět:" ) ,
+                  print ( "název, životy, síla, obratnost, inteligence, střelný (y/n)" ) ,
+                  switch ( gItemCust ( gStr , gInt , gInt , gInt , gInt ,
+                                       if ( equal ( gStr , "y" ) , 1 , 0 ) ) ,
+                  print ( "Postava hráče neexistuje!" ) ) )
+;tooHeavyMacro=print ( "Máš moc věcí. Něco vyhoď." )
+;winGameMacro=eval ( print ( "Vyhrál jsi hru!" ) ,
+                     print ( "Tvé konečné skóre: " , set ( "score" ) ) ,
+                     print ( "Zkus si zahrát na těžší obtížnost, nebo za jiné povolání :D" ) )
+;questDoneMacro=eval ( increase ( "finalGoal" , -1 ) ,
+                       print ( "Dokončil jsi úkol! [dostal jsi 4 zlata]" ) ,
+                       pay ( -4 ) ,
+                       if ( equal ( set ( "finalGoal" ) , 0 ) ,
+                            winGameMacro ,
+                            print ( "Pro výhru musíš ještě dokončit " ,
+                                    set ( "finalGoal" ) ,
+                                    " dalších úkolů" ) ) )
+;encMacro=eval ( revealMap ( 3 ) , 
+                 delLoot ,
+                 enc ,
+                 repeat ( chckQuest , questDoneMacro ) ,
+                 printMap ,
+                 switch ( enc ,
+                          eval ( print ( "Potkal jsi jednotku, která na tebe hned zaútočila!" ) ,
+                                 pushMenu ( "fight" ) ,
+                                 fightInfo ) ,
+                          print ( "Potkal jsi přátelskou jednotku." , " [talk]" ) ) )
+
+;saveMsgMacro=print ( "Ukládám hru" )
+;s=eval ( saveMsgMacro , save ( "tmp" ) )
+;ss=eval ( saveMsgMacro , switch ( save ( gStr ) , print ( "Chyba při ukládání!" ) ) )
+;loadMsgMacro=print ( "Nahrávám hru" )
+;loadErrMacro=eval ( print ( "Soubor se hrou neexistuje!" ) )
+;ls=eval ( print ( "Uložené hry:" ) , listSaves )
+;l=eval ( loadMsgMacro , switch ( load ( "tmp" ), loadErrMacro , encMacro ) )
+;ll=eval ( loadMsgMacro , ls , switch ( load ( gStr ) , loadErrMacro ) )
+;close=eval ( delWorld , delPlayer )
+
+;fileErrMacro=print ( "File not found!" )
+;editHelp= switch ( printFile ( "help/edithelp"  ) , fileErrMacro )
+;fightHelp=switch ( printFile ( "help/fighthelp" ) , fileErrMacro )
+;talkHelp= switch ( printFile ( "help/talkhelp"  ) , fileErrMacro )
+;menuHelp= switch ( printFile ( "help/menuhelp"  ) , fileErrMacro )
+;classHelp=switch ( printFile ( "help/classhelp" ) , fileErrMacro )
+;mapHelp=  switch ( printFile ( "help/maphelp"   ) , fileErrMacro )
+
+;play=menu ( "mainmenu" )
+;edit=menu ( "emode" )
+;mapa=switch ( printMap , print ( "Neexistuje mapa!" ) )
+;createWorld=switch ( newWorld ( gInt , gInt , "standard" ) , print ( "Neexistuje mapa!" ) )
+;createPlayer=newPlayer ( gStr , gInt , gInt , gInt , gInt , gInt )
+;deletePlayer=switch ( delPlayer , print ( "Player character doesn't exit!" ) , print ( "Player deleted." ) )
+;deleteWorld=switch ( delWorld , print ( "World does not exist!" ) , print ( "World deleted." ) )
+;deleteAll=eval ( delWorld , delPlayer )
+;plrGenMacro=eval ( print ( "Write your characters name and class" ) ,
+                    switch ( newPlayer ( recust ( 2 , print ( "Choose name:" ) ,
+                                         gStr ) , recust ( 3 , classHelp ,
+                                         eval ( print ( "Class: 0 warior" ) ,
+                                                print ( "       1 thief" ) ,
+                                                print ( "       2 mage" ) ,
+                                                print ( "       3 ranger" ) ,
+                                                print ( "       4 paladin" ) ,
+                                                print ( "       5 warmage" ) ,
+                                                print ( "       6 guru" ) ) ,
+                                         gInt ) , 6 , 4 , 3 , 2 ) ,
+                     print ( "Error: Player character exists!" ) ,
+                     eval ( gItemRand , gItemRand , pay ( -6 ) , revealMap ( 4 ) ,
+                            mapa , print ( "This is your world" ) ,
+                            resetVars ,
+                            set ( "score" , 0 ) ,
+                            set ( "backpack" , 5 ) ,
+                            set ( "backpackCost" , 8 ) ,
+                            set ( "finalGoal" , 10 ) ) ) )
+;worldErrMacro=print ( "Error: World already exists!" )
+;newGame=switch    ( newWorld ( 60  , 20 , "standard" ) , worldErrMacro , plrGenMacro )
+;newGameBig=switch ( newWorld ( 120 , 30 , "standard" ) , worldErrMacro , plrGenMacro )
+
+;choices=eval ( print ( "Commands: " ) , commands , print )
+;tel=port ( gInt , gInt )
+;encounter=switch ( enc , eval ( pushMenu ( "fight" ) , fightInfo ) , print ( "There is only ally." ) )
+;talk=switch ( enc , print ( "Enemy creature will not talk to you." ) ,
+                     eval ( print ( rerand ( "Ahoj, co si přeješ?" ,
+                                             "Mohu pro tebe něco udělat?" ) ) ,
+                                    pushMenu ( "/main" ) , choices ) )
+
+
+;fightInf=fightInfo
+;looseMacro=eval ( print ( "Prohrál jsi!" ) ,
+            print ( "Konečné skóre: " , set ( "score" ) ) ,
+            deleteAll , popMenu )
+;winMacro=  eval ( print ( "Vyhrál jsi!"  ) ,
+            print ( "Nepřítel měl tyto předměty:" ) , showLoot ,
+            increase ( "score" , 6 ) , popMenu )
+;fleeMacro=eval ( popMenu , mapa ,
+                  print ( "Jsi nucen k útěku" ) ,
+                  pushMenu ( "movemenu" ) )
+;bash= switch ( fight ( 60 , 20 , 20     ) , looseMacro , winMacro , fleeMacro )
+;hit=  switch ( fight ( 40 , 30 , 30     ) , looseMacro , winMacro , fleeMacro )
+;slash=switch ( fight ( 20 , 20 , 60     ) , looseMacro , winMacro , fleeMacro )
+;block=switch ( fight ( 0  , 60 , 40     ) , looseMacro , winMacro , fleeMacro )
+;flee= switch ( fight ( 0  , 40 , 60 , 1 ) , looseMacro , winMacro , fleeMacro )
+;remItMacro=eval ( print ( "Více předmětů neuneseš." ) ,
+                   listItems ,
+                   print ( "Vyber předmět k vyhození:" ) ,
+                   while ( remItem ( gInt ) ) )
+;fightLoot=if ( great ( takeLoot , set ( "backpack" ) ) , eval ( pushMenu ( "remitem" ) , tooHeavyMacro ) )
+
+;goodbye=eval ( print ( rerand ( "Nashledanou" ,
+                                 "Přijď znovu" ) ) , popMenu )
+;offer=eval ( print ( rerand ( "Pár věcí a mapu, jeslti chceš." ,
+                               "Řekni, až si něco vybereš." ) ) , goods )
+;changeMsgMacro=eval ( increase ( "score" , 1 ) ,
+                print ( rerand ( "Je potěšení s tebou obchodovat." ,
+                                 "Výborně!" ,
+                                 "Chceš něco dalšího?" ) ) )
+;errItIdxMacro=print ( "Error: Invalid item index!" ) 
+;notGoldMacro=print ( rerand ( "I can not sell this for nothing." ,
+                               "You need more gold to buy this." ) )
+;buy=switch ( buyItem ( gInt ) , errItIdxMacro , changeMsgMacro , notGoldMacro )
+;reward=eval ( print ( "Yes, choose one of these:" ) ,
+               goods ,
+               buyItem ( gInt , 0 ) ,
+               menu ( "main" ) )
+;sell=switch ( sellItem ( gInt , course ) ,
+               errItIdxMacro ,
+               changeMsgMacro )
+;buyMap=eval ( print ( "You want to buy map of near area for 3 gold? (y/n)" ) ,
+               if ( equal ( gStr , "y" ) , switch ( pay ( 3 ) , notGoldMacro , revealMap ( 6 ) ) ) )
+;buyCMap=eval ( print ( "You want to buy whole map for 20 gold? (y/n)" ) ,
+               if ( equal ( gStr , "y" ) , switch ( pay ( 20 ) , notGoldMacro , revealMap ) ) )
+;buyInvSpace=eval ( print ( "You want to buy new inventory space for " , set ( "backpackCost" ) , " gold? (y/n)" ) ,
+               if ( equal ( gStr , "y" ) , switch ( pay ( set ( "backpackCost" ) ) ,
+               notGoldMacro , eval ( increase ( "backpack" , 1 ) , increase ( "backpackCost" , 2 ) ) ) ) )
+;itRewMacro=eval ( print ( "You completed a quest!" ) , set ( "score" , sum ( set ( "score" ) , 8 ) ) ,
+                        pushMenu ( "complete" ) ,
+                        print ( rerand ( "Thank you" ,
+                                         "So you did it" ) ,
+                                ", " ,
+                                rerand ( "please choose one item as your reward." ,
+                                         "you may have one item for free." ) ) )
+;quest=eval ( print ( "Chci aby jsi navštívil " ,
+                      rerand ( "mého strýce" , "moji babičku" , "mé rodiče" , "mého synovce" ) ,
+                      ". [You got a quest, see 'q']" ) , crQuest )
+                                         
+                                         
+;tmp61054=eval ( print ( "Nic pro tebe nemám." ) ,
+          print ( "Ano, mám pro tebe něco." , " [New quest! type 'q']" ) )
+;lq=eval ( print ( "Pro výhru splň ještě " ,
+                   set ( "finalGoal" ) ,
+                   " dalších úkolů" ) ,
+           listQuest ,
+           eval ( print ( "Jsi na pozici: " ) , coords ) )
+
+;movU=eval ( move (  0 , -1 ) , encMacro )
+;movD=eval ( move (  0 ,  1 ) , encMacro )
+;movR=eval ( move (  1 ,  0 ) , encMacro )
+;movL=eval ( move ( -1 ,  0 ) , encMacro )
+;forceMovU=eval ( move (  0 , -1 ) , eval ( popMenu , encMacro ) )
+;forceMovD=eval ( move (  0 ,  1 ) , eval ( popMenu , encMacro ) )
+;forceMovR=eval ( move (  1 ,  0 ) , eval ( popMenu , encMacro ) )
+;forceMovL=eval ( move ( -1 ,  0 ) , eval ( popMenu , encMacro ) )
+;c=craft ( gInt )
+
+
+;st=stats
+;li=listItems
+;lig=listItems ( course )
+;drop=switch ( remItem ( gInt ) , errItIdxMacro )
+;dropRet=if ( great ( set ( "backpack" ) , remItem ( gInt ) ) , popMenu )
+;exit=quit

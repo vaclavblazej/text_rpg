@@ -1,0 +1,15 @@
+Help: talks with allies
+ You met ally creature, it might be interested in few things.
+  help          = show this help
+  help-map      = show help about map
+  help-class    = show help about classes
+ -exchange
+  items       = list gold and all items you have to offer
+  offer       = list all items creature has to offer
+  buy <idx>   = buy items on index if you have enough gold
+  sell <idx>  = sell item in index, you will get gold for it
+  quest       = ask for quest
+ -others
+  q           = list all quests
+  bye         = go away from ally creature and continue
+  quit/exit = exit game

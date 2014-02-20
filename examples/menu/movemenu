@@ -1,0 +1,17 @@
+move
+help=menuhelp
+help-map=mapHelp
+help-class=classHelp
+classes=classhelp
+items=li
+drop=drop
+w=forceMovU
+s=forceMovD
+d=forceMovR
+a=forceMovL
+q=lq
+map=mapa
+stats=st
+fight=encounter
+quit=exit
+exit=exit

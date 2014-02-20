@@ -1,0 +1,12 @@
+Help: classes
+ There are several classes in this game.
+ You get to choose one in the beginnnig.
+ Class can not be changed in game.
+List of all classes and their features:
+  warior  - gets damage from strength
+  thief   - gets damage from agility
+  magus   - gets damage from intelect
+  ranger  - gets reduced damage from strength and agility
+  paladin - gets reduced damage from strength and intelect
+  warmage - gets reduced damage from intelect and agility
+  guru    - gets highly reduced damage from strength, agility and intelect
