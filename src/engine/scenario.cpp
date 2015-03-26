@@ -81,8 +81,7 @@ Scenario::~Scenario()
   delete m_Character;
   delete m_Quests;
   delete m_Battle;
-  for (vector <Item*>::const_iterator it = m_Loot.begin();
-       it != m_Loot.end(); ++it) (*it)->RemRef();
+  for (Item* it : m_Loot) it->RemRef();
   m_Loot.clear();
 }
 //====================================================================LoadMethod

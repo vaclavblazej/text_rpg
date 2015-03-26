@@ -12,15 +12,14 @@ using namespace std;
 //-------------------------------------------------------------------------Field
 Field::Field()
             :m_Height(0),
-             m_Discovered(false)
-{
+             m_Discovered(false) {
   //m_Area.push_back(new Area(fill, color));
 }
 //------------------------------------------------------------------------~Field
 Field::~Field()
 {
-  for (auto it = m_Area.begin(); it != m_Area.end(); ++it) {
-  	delete *it;
+  for (Area * it : m_Area) {
+  	delete it;
   }
 }
 //-----------------------------------------------------------------------AddArea
@@ -58,8 +57,8 @@ void Field::Save(ofstream &output) const
   output << m_Discovered << " "
          << m_Height << " "
          << m_Area.size() << endl;
-  for (auto it = m_Area.begin(); it != m_Area.end(); ++it){
-    (*it)->Save(output);
+  for (Area * it : m_Area){
+    it->Save(output);
   }
 }
 //--------------------------------------------------------------------------Load
@@ -70,8 +69,8 @@ void Field::Load(std::ifstream &input)
   getline(input, line);
   istringstream is(line);
   is >> m_Discovered >> m_Height >> count;
-  for (auto it = m_Area.begin(); it != m_Area.end(); ++it) {
-  	delete *it;
+  for (Area * it : m_Area) {
+  	delete it;
   }
   m_Area.clear();
   for (int i = 0; i < count; i++){

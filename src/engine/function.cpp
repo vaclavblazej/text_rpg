@@ -9,8 +9,8 @@ Function::Function(funcPtr arg, vector<Expression*> &atrs) {
   atributes = atrs;
 }
 Function::~Function() {
-  for (auto it = atributes.begin(); it != atributes.end(); ++it){
-    (*it)->Destroy();
+  for (Expression * it : atributes){
+    it->Destroy();
   }
 }
 ReturnVal *Function::getValue() const {

@@ -15,20 +15,18 @@ int main (int argc, char *argv[]){
     input.open ("./src/config.txt", ios::in);
     if (!input.good()){
       cout << "ERROR: Config file is missing!\n"
-           << "Create ./src/config.txt to fix this problem."
-	   << endl;
+           << "Create ./src/config.txt to fix this problem." << endl;
       return 1;
-    } else {
-      cout << ">> Loading config file" << endl;
-      string command, parameter;
-      while (input.good()){
-        getline(input, command, '=');
+    }
+	cout << ">> Loading config file" << endl;
+	string command, parameter;
+	while (input.good()){
+		getline(input, command, '=');
 		if (!input.good()) break;
 		getline(input, parameter);
 		if (command == "GAME_DIRECTORY") gameDirectory.append(parameter).append("/");
-      }
-      input.close();
-    }
+	}
+	input.close();
     if (gameDirectory == "./"){
       cout << "ERROR: Game directory not defined! (in ./src/config.txt)" << endl;
       return 1;
@@ -37,15 +35,14 @@ int main (int argc, char *argv[]){
     string structureFile = gameDirectory;
     structureFile.append("structure.txt");
     input.open (structureFile.c_str(), ios::in);
-    string command;
     getline(input, command, '=');
-    bool item, crea, menu, save, play, edit;
-    item = crea = menu = save = play = edit = false;
     if (!input.good()){
       cout << "ERROR: Structure file is missing!" << endl;
       return 0;
     }
-    while(input.good()){
+    bool item, crea, menu, save, play, edit;
+    item = crea = menu = save = play = edit = false;
+    while (input.good()){
       if (command == "ITEM_DIRECTORY")     item = true;
       if (command == "CREATURE_DIRECTORY") crea = true;
       if (command == "MENU_DIRECTORY"){    menu = true; input >> menumenu;}
@@ -56,7 +53,7 @@ int main (int argc, char *argv[]){
       getline(input, command, '=');
     }
     input.close();
-    if(item == false || crea == false || menu == false ||
+    if (item == false || crea == false || menu == false ||
        save == false || play == false || edit == false){
       cout << "ERROR: Directory with";
       if (item == false) cout << " items";
@@ -79,29 +76,29 @@ int main (int argc, char *argv[]){
     input.close();
     cout << ">> Script file ok" << endl;
   }
-  if(argc > 1){
+  if (argc > 1){
     string help = "--help";
     string seditor = "-e";
     if (argv[1] == help){
       cout << "Usage: " << argv[0] << "[option]" << endl;
       ifstream input;
       input.open ("./src/helpfile.txt", ios::in);
-      if(input.good()){
+      if (input.good()){
         string line;
         getline(input, line);
-        while(input.good()){
+        while (input.good()){
           cout << line << endl;
           getline(input, line);
         }
         input.close();
-      }else{
+      } else {
         cout << "ERROR: Help file not found!" << endl;
       }
       return 1;
-    }else if (argv[1] == seditor){
+    } else if (argv[1] == seditor){
       cout << "edit mode:" << endl;
       editor = true;
-    }else{
+    } else {
       cout << "Usage: " << argv[0] << "[option]" << endl;
       cout << argv[0] << ": error: no such option: -" << argv[1] << endl;
       cout << "Use `" << argv[0] << " --help' for a complete list of options." << endl;
@@ -110,12 +107,12 @@ int main (int argc, char *argv[]){
   }
   const string tmp = gameDirectory + menumenu + '/';
   Menu mainMenu(gameDirectory, tmp);
-  if(!mainMenu.Good()) return 1;
+  if (!mainMenu.Good()) return 1;
   cout << ">> Loading scripts ok" << endl;
-  if(editor){
-    mainMenu.Run(editmenu.c_str());
-  }else{
-    mainMenu.Run(playmenu.c_str());
+  if (editor){
+    mainMenu.Run(editmenu);
+  } else {
+    mainMenu.Run(playmenu);
   }
   return 0;
 }

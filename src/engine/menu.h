@@ -40,7 +40,7 @@ public:
   Menu(std::string gameDirectory, std::string menuDirectory);
   ~Menu();
   bool Good() const;
-  void Run(const char * commandFileName);
+  void Run(const std::string commandFileName);
 private:
   bool good;
   void Simmilar() const;

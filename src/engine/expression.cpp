@@ -12,5 +12,5 @@ void Expression::Create ()
 }
 void Expression::Destroy()
 {
-  if(--refCount <= 0) delete this;
+  if (--refCount <= 0) delete this;
 }

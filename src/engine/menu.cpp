@@ -180,20 +180,21 @@ Expression* Menu::LoadFunction(istringstream & is, char &next, int &len, string 
   return result;
 }
 //---------------------------------------------------------------------------Run
-void Menu::Run(const char * commandFileName){
+void Menu::Run(const string commandFileName){
   string line;
   vector <Expression*> arg;
   arg.push_back(new Word(commandFileName));
   delete LoadPushMenu(arg);//commandFileName
   delete arg[0];
   arg.clear();
-  if (expressions["init"]) delete expressions["init"]->getValue();
+  if (expressions["init"] != NULL) delete expressions["init"]->getValue();
   bool b_Repeat = true;
   int found;
+  // main input loop
   while (b_Repeat){
     cout << PWD;
     found = 1;
-    cin >> line;
+	getline(cin, line);
     if (!cin.good()) break;
     if (line != ""){
       for (map<string, Expression*>::iterator it = alias.begin();
@@ -227,18 +228,12 @@ void Menu::Simmilar() const
 //-------------------------------------------------------------------CommandList
 void Menu::CommandList() const
 {
-  map<string, Expression*>::const_iterator beg = alias.begin();
-  map<string, Expression*>::const_iterator end = alias.end();
-  map<string, Expression*>::const_iterator fir = (alias.size() > 0)?--alias.end():alias.end();
-  map<string, Expression*>::const_iterator sec = (alias.size() > 1)?--(--alias.end()):alias.end();
-  map<string, Expression*>::const_iterator it;
-  for (it = beg; it != end; it++){
-    cout << '[' << (*it).first << ']';
-    if (it == sec){
-      cout << " or ";
-    }else if (it != sec && it != fir){
-      cout << ", ";
-    }
+  map<string, Expression*>::const_iterator it = alias.begin();
+  const int len = alias.size();
+  for (int i = 0; i < len; i++, ++it) {
+    if (i == len-1) cout << " or ";
+    else if (i != 0) cout << ", ";
+    cout << '[' << it->first << ']';
   }
 }
 //====================================================================LoadMethod

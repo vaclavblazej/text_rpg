@@ -15,8 +15,7 @@ Quest::Quest(World *world, Creature *player, vector <Subquest*> quests)
 //------------------------------------------------------------------------~Quest
 Quest::~Quest()
 {
-  for (vector<Subquest*>::iterator it = m_Goals.begin();
-       it != m_Goals.end(); ++it) delete *it;
+  for (Subquest* it : m_Goals) delete it;
 }
 //-----------------------------------------------------------------------GetMark
 void Quest::GetMark(int &x, int &y)
@@ -43,16 +42,14 @@ void Quest::Print(ostream &os) const
 void Quest::Save(ofstream &output) const
 {
   output << m_Goals.size() << endl;
-  for (vector <Subquest*>::const_iterator it = m_Goals.begin();
-       it != m_Goals.end(); ++it){
-    (*it)->Save(output);
+  for (Subquest* it : m_Goals){
+    it->Save(output);
   }
 }
 //--------------------------------------------------------------------------Load
 void Quest::Load(std::ifstream &input)
 {
-  for (vector <Subquest*>::const_iterator it = m_Goals.begin();
-       it != m_Goals.end(); ++it) delete *it;
+  for (Subquest* it : m_Goals) delete it;
   m_Goals.clear();
   int c_Quests;
   string line;

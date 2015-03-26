@@ -34,9 +34,8 @@ World::World(int width, int height, string creaDir, string itemDir)
   Populate();
   SetBiome();
   // creatures
-  for (vector <CreaBP*>::const_iterator it = creatureBlueprints.begin();
-       it != creatureBlueprints.end(); ++it){
-    delete *it;
+  for (CreaBP* it : creatureBlueprints){
+    delete it;
     cout << "CREATURE ERROR\n";
   }
   creatureBlueprints.clear();
@@ -48,9 +47,9 @@ World::World(int width, int height, string creaDir, string itemDir)
   file.open (meta.c_str(), ios::in);
   if (!file.good()){
     cout << "Creatures metadata file not found!" << endl;
-  }else{
+  } else {
     getline(file,line);
-    while(file.good()){
+    while (file.good()){
       creatureBlueprints.push_back(new CreaBP(line, creaDir));
       getline(file,line);
     }
@@ -67,8 +66,7 @@ World::World(int width, int height, string creaDir, string itemDir)
     file.open (meta.c_str(), ios::in);
     file >> line;
     while(file.good()){
-      if (line != "=")
-        m_Materials.insert(line);
+      if (line != "=") m_Materials.insert(line);
       file >> line;
     }
     file.close();
@@ -77,23 +75,22 @@ World::World(int width, int height, string creaDir, string itemDir)
     file.open (meta.c_str(), ios::in);
     getline(file, line);
     vector<pair<string, string> > names;
-    while(file.good()){
+    while (file.good()){
       istringstream iss(line);
       string name, shortname;
       iss >> name >> shortname;
       names.push_back(pair<string, string>(name, shortname));
       getline(file,line);
     }
-    for (vector <pair<string, string> >::const_iterator it = names.begin();
-         it != names.end(); ++it){
-      cout << (*it).first << " " << (*it).second << endl;
+    for (pair<string, string> it : names){
+      cout << it.first << " " << it.second << endl;
     }
     file.close();
     meta = itemDir;
     meta.append("metadata");
     file.open (meta.c_str(), ios::in);
     getline(file,line);
-    while(file.good()){
+    while (file.good()){
       ifstream sub;
       string name = "UNKNOWN";
       string tmp = itemDir;
@@ -101,7 +98,7 @@ World::World(int width, int height, string creaDir, string itemDir)
       sub.open (tmp.c_str(), ios::in);
       if (!sub.good()){
         cout << "Error: Item blueprint file not found!" << endl;
-      }else{
+      } else {
         string ln, cmd;
         getline(sub, ln);
         while (sub.good()){
@@ -124,11 +121,9 @@ World::World(int width, int height, string creaDir, string itemDir)
 }
 //------------------------------------------------------------------------~World
 World::~World(){
-  for (vector <CreaBP*>::const_iterator it = creatureBlueprints.begin();
-       it != creatureBlueprints.end(); ++it) delete *it;
+  for (CreaBP* it : creatureBlueprints) delete it;
   creatureBlueprints.clear();
-  for (t_ItemBP::const_iterator it = itemBlueprints.begin();
-       it != itemBlueprints.end(); ++it)     delete (*it).second;
+  for (auto it : itemBlueprints) delete it.second;
   itemBlueprints.clear();
   for (int i = 0; i < width; i++){
     for (int j = 0; j < height; j++){
@@ -217,16 +212,15 @@ void World::AddMobs()
   vector <Creature*> allCreatures;
   for (int i = 0; i < width; i++){
     for (int j = 0; j < height; j++){
-      for (std::vector <Area*>::iterator it  = grid[i][j]->m_Area.begin(),
-                                         end = grid[i][j]->m_Area.end();
-           it != end; ++it){
+	  int id = 0;
+      for (Area* it : grid[i][j]->m_Area){
         if ((rand()%100 < 10) && creatureBlueprints.size()){
-          Creature *crea = CreateMob(i, j, it-grid[i][j]->m_Area.begin());
+          Creature *crea = CreateMob(i, j, id++);
           set<string>::iterator ii = m_Materials.begin();
           advance(ii, rand() % m_Materials.size());
           crea->GiveItem(CreateItem(*ii));
           crea->GiveItem(CreateItem());
-          (*it)->AddCreature(crea);
+          it->AddCreature(crea);
           allCreatures.push_back(crea);
         }
       }
@@ -241,9 +235,7 @@ void World::AddMobs()
             Creature * goal = allCreatures[rand()%allCreatures.size()];
             int x, y, l;
             goal->GetInfo(x, y, l);
-            Ally *ally = new Ally("Friend", i, j,
-                                  id++,
-                                  !bool(rand()%3));
+            Ally *ally = new Ally("Friend", i, j, id++, !bool(rand()%3));
             for (int i = rand()%3+1; i >= 0; i--)
               ally->GiveItem(CreateItem());
             set<string>::iterator ii;
