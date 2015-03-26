@@ -14,8 +14,7 @@ Ally::Ally(string name, int X, int Y, int L, bool quests)
 //-------------------------------------------------------------------------~Ally
 Ally::~Ally()
 {
-  for (vector <Item*>::const_iterator it = m_Items.begin();
-       it != m_Items.end(); ++it) (*it)->RemRef();
+  for (Item* it : m_Items) it->RemRef();
   m_Items.clear();
 }
 //-------------------------------------------------------------------------Paint

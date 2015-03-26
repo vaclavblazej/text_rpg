@@ -12,10 +12,8 @@ Area::Area(int areaCode):m_AreaCode(areaCode){}
 //-------------------------------------------------------------------------~Area
 Area::~Area()
 {
-  for (vector <Creature*>::const_iterator it = m_Creatures.begin();
-       it != m_Creatures.end(); ++it) delete *it;
-  for (vector <Ally*>::const_iterator it = m_Allies.begin();
-       it != m_Allies.end(); ++it)    delete *it;
+  for (Creature* it : m_Creatures)	delete it;
+  for (Ally* it : m_Allies)			delete it;
 }
 //-----------------------------------------------------------------------GetCode
 int Area::GetCode() const
@@ -51,13 +49,11 @@ void Area::Save(ofstream &output) const
   output << m_AreaCode << " "
          << m_Creatures.size() << " "
          << m_Allies.size() << endl;
-  for (vector <Creature*>::const_iterator it = m_Creatures.begin();
-       it != m_Creatures.end(); ++it){
-    (*it)->Save(output);
+  for (Creature* it : m_Creatures){
+    it->Save(output);
   }
-  for (vector <Ally*>::const_iterator it = m_Allies.begin();
-       it != m_Allies.end(); ++it){
-    (*it)->Save(output);
+  for (Ally* it : m_Allies){
+    it->Save(output);
   }
 }
 //--------------------------------------------------------------------------Load
@@ -68,16 +64,14 @@ void Area::Load(std::ifstream &input)
   getline(input, line);
   istringstream is(line);
   is >> m_AreaCode >> cCrea >> cAlly;
-  for (vector <Creature*>::const_iterator it = m_Creatures.begin();
-       it != m_Creatures.end(); ++it) delete *it;
+  for (Creature* it : m_Creatures) delete it;
   m_Creatures.clear();
   for (int i = 0; i < cCrea; i++){
     Creature *crea = new Creature;
     crea->Load(input);
     AddCreature(crea);
   }
-  for (vector <Ally*>::const_iterator it = m_Allies.begin();
-       it != m_Allies.end(); ++it) delete *it;
+  for (Ally* it : m_Allies) delete it;
   m_Allies.clear();
   for (int i = 0; i < cAlly; i++){
     Ally *ally = new Ally;

@@ -19,8 +19,9 @@ Field::Field()
 //------------------------------------------------------------------------~Field
 Field::~Field()
 {
-  for (vector <Area*>::const_iterator it = m_Area.begin();
-       it != m_Area.end(); ++it) delete *it;
+  for (auto it = m_Area.begin(); it != m_Area.end(); ++it) {
+  	delete *it;
+  }
 }
 //-----------------------------------------------------------------------AddArea
 void Field::AddArea(Area *area)
@@ -57,8 +58,7 @@ void Field::Save(ofstream &output) const
   output << m_Discovered << " "
          << m_Height << " "
          << m_Area.size() << endl;
-  for (vector <Area*>::const_iterator it = m_Area.begin();
-       it != m_Area.end(); ++it){
+  for (auto it = m_Area.begin(); it != m_Area.end(); ++it){
     (*it)->Save(output);
   }
 }
@@ -70,11 +70,12 @@ void Field::Load(std::ifstream &input)
   getline(input, line);
   istringstream is(line);
   is >> m_Discovered >> m_Height >> count;
-  for (vector <Area*>::const_iterator it = m_Area.begin();
-       it != m_Area.end(); ++it) delete *it;
+  for (auto it = m_Area.begin(); it != m_Area.end(); ++it) {
+  	delete *it;
+  }
   m_Area.clear();
   for (int i = 0; i < count; i++){
-    Area *area = new Area;
+    Area *area = new Area();
     area->Load(input);
     AddArea(area);
   }
@@ -87,18 +88,18 @@ vector <Item*> Field::KillMob(Creature *mob, const int &l)
 //------------------------------------------------------------------GetCreatures
 vector <Creature*> Field::GetCreatures()
 {
-  if(m_Area.size() > 0){
+  if (m_Area.size() > 0){
     return m_Area[0]->GetCreatures();
-  }else{
+  } else {
     return vector <Creature*> ();
   }
 }
 //---------------------------------------------------------------------GetAllies
 vector <Ally*> Field::GetAllies()
 {
-  if(m_Area.size() > 0){
+  if (m_Area.size() > 0){
     return m_Area[0]->GetAllies();
-  }else{
+  } else {
     return vector <Ally*> ();
   }
 }

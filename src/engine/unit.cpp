@@ -14,8 +14,7 @@ Unit::Unit(string name, int X, int Y, int L, int gold)
 //-------------------------------------------------------------------------~Unit
 Unit::~Unit()
 {
-  for (vector <Item*>::const_iterator it = m_Items.begin();
-       it != m_Items.end(); ++it) (*it)->RemRef();
+  for (Item* it : m_Items) it->RemRef();
   m_Items.clear();
 }
 //----------------------------------------------------------------------GetItems
@@ -62,9 +61,8 @@ bool Unit::ChangeGold(int amount)
 bool Unit::IsItem(string str)
 {
   string name;
-  for (vector<Item*>::const_iterator it = m_Items.begin();
-       it != m_Items.end(); ++it){
-    (*it)->GetInfo(name);
+  for (Item* it : m_Items){
+    it->GetInfo(name);
     if (name == str){
       return true;
     }
@@ -75,8 +73,7 @@ bool Unit::IsItem(string str)
 bool Unit::DelByName(string str)
 {
   string name;
-  for (vector<Item*>::iterator it = m_Items.begin();
-       it != m_Items.end(); ++it){
+  for (vector<Item*>::iterator it = m_Items.begin(); it != m_Items.end(); ++it){
     (*it)->GetInfo(name);
     if (name == str){
       (*it)->RemRef();
@@ -96,7 +93,7 @@ int Unit::GiveItem(Item *item)
 Item * Unit::HandItem(int which)
 {
   if (which > 0 && (unsigned int) which <= m_Items.size()){
-    vector <Item*>::iterator it = m_Items.begin()+which-1;
+    vector <Item*>::iterator it = m_Items.begin() + which - 1;
     Item *item = *it;
     m_Items.erase(it);
     return item;
@@ -125,9 +122,8 @@ void Unit::Save(ofstream &output) const
          << m_L << " "
          << m_Gold << " "
          << m_Items.size() << endl;
-  for (vector <Item*>::const_iterator it = m_Items.begin();
-       it != m_Items.end(); ++it){
-    (*it)->Save(output);
+  for (Item* it : m_Items){
+    it->Save(output);
   }
 }
 //--------------------------------------------------------------------------Load
@@ -137,10 +133,9 @@ void Unit::Load(std::ifstream &input)
   string line;
   getline(input, line);
   istringstream is(line);
-  is >> m_Name >> m_X >> m_Y >> m_L >> m_Gold 
-     >> count;
+  is >> m_Name >> m_X >> m_Y >> m_L >> m_Gold >> count;
   for (int i = 0; i < count; i++){
-    Item *item = new Item;
+    Item *item = new Item();
     item->Load(input);
     m_Items.push_back(item);
   }

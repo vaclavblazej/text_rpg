@@ -24,15 +24,18 @@ ItemBP::ItemBP(string name, string fileName, t_Type attrs)
   file.open (fileName.c_str(), ios::in);
   if (!file.good()){
     cout << "Error: Item blueprint file not found!" << endl;
-  }else{
+  } else {
     getline(file, line);
     while (file.good()){
       min = max = 1;
       istringstream is(line);
       getline(is, comm, '=');
-      if (comm == "name"    ){is >> arg;        m_Name        = arg;}
+      if (comm == "name"){
+	  	is >> arg;
+		m_Name = arg;
+	  }
       for (t_Type::const_iterator it = attrs.begin(); it != attrs.end(); ++it){
-        if (comm == (*it).second){
+        if (comm == it->second){
           t_Duo tmp(min, max);
           m_Attrs.push_back(t_Elem(comm, tmp));
           //cout << comm << " " << min << " " << max << endl;
@@ -51,10 +54,9 @@ ItemBP::~ItemBP(){}
 Item *ItemBP::New() const
 {
   vector<t_Done> tmp;
-  for (vector<t_Elem>::const_iterator it = m_Attrs.begin();
-       it != m_Attrs.end(); ++it){
-    t_Duo range = (*it).second;
-    tmp.push_back(t_Done((*it).first,
+  for (auto it = m_Attrs.begin(); it != m_Attrs.end(); ++it){
+    t_Duo range = it->second;
+    tmp.push_back(t_Done(it->first,
                   range.first + rand()%(range.second - range.first + 1)));
     //cout << tmp[tmp.size()-1].first << " " << tmp[tmp.size()-1].second << endl;
   }

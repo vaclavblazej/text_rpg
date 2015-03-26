@@ -14,22 +14,24 @@ int main (int argc, char *argv[]){
     ifstream input;
     input.open ("./src/config.txt", ios::in);
     if (!input.good()){
-      cout << "ERROR: Config file is missing!" << endl;
-      return 0;
-    }else{
-      cout << ">> Loading config file..." << endl;
+      cout << "ERROR: Config file is missing!\n"
+           << "Create ./src/config.txt to fix this problem."
+	   << endl;
+      return 1;
+    } else {
+      cout << ">> Loading config file" << endl;
       string command, parameter;
-      getline(input, command, '=');
-      while(input.good()){
-        getline(input, parameter);
-        if (command == "GAME_DIRECTORY") gameDirectory.append(parameter).append("/");
+      while (input.good()){
         getline(input, command, '=');
+		if (!input.good()) break;
+		getline(input, parameter);
+		if (command == "GAME_DIRECTORY") gameDirectory.append(parameter).append("/");
       }
       input.close();
     }
     if (gameDirectory == "./"){
       cout << "ERROR: Game directory not defined! (in ./src/config.txt)" << endl;
-      return 0;
+      return 1;
     }
     cout << ">> Config file ok" << endl;
     string structureFile = gameDirectory;
@@ -64,7 +66,7 @@ int main (int argc, char *argv[]){
       if (play == false) cout << " play_menu";
       if (edit == false) cout << " edit_menu";
       cout << " was not defined in structure.txt file in game directory!" << endl;
-      return 0;
+      return 1;
     }
     cout << ">> Structure file ok" << endl;
     string scriptFile = gameDirectory;
@@ -72,7 +74,7 @@ int main (int argc, char *argv[]){
     input.open (scriptFile.c_str(), ios::in);
     if (!input.good()){
       cout << "ERROR: Script file is missing!" << endl;
-      return 0;
+      return 1;
     }
     input.close();
     cout << ">> Script file ok" << endl;
@@ -95,7 +97,7 @@ int main (int argc, char *argv[]){
       }else{
         cout << "ERROR: Help file not found!" << endl;
       }
-      return 0;
+      return 1;
     }else if (argv[1] == seditor){
       cout << "edit mode:" << endl;
       editor = true;
@@ -103,18 +105,17 @@ int main (int argc, char *argv[]){
       cout << "Usage: " << argv[0] << "[option]" << endl;
       cout << argv[0] << ": error: no such option: -" << argv[1] << endl;
       cout << "Use `" << argv[0] << " --help' for a complete list of options." << endl;
-      return 0;
+      return 1;
     }
   }
-  string tmp = gameDirectory;
-  tmp.append(menumenu).append("/");
+  const string tmp = gameDirectory + menumenu + '/';
   Menu mainMenu(gameDirectory, tmp);
-  if(!mainMenu.Good()) return 0;
+  if(!mainMenu.Good()) return 1;
   cout << ">> Loading scripts ok" << endl;
   if(editor){
     mainMenu.Run(editmenu.c_str());
   }else{
     mainMenu.Run(playmenu.c_str());
   }
-	return 0;
+  return 0;
 }

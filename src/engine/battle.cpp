@@ -86,12 +86,8 @@ int Battle::Fight(int crit, int block, int dodge, bool flee)
   //state check
   cout << "your health: "   << m_FirstHp   << ", "
        << "enemys health: " << m_SecondHp << endl;
-  if (m_FirstHp <= 0){
-    return 1;
-  }
-  if (m_SecondHp <= 0){
-    return 2;
-  }
+  if (m_FirstHp <= 0){ return 1; }
+  if (m_SecondHp <= 0){ return 2; }
   if (flee) return 3;
   return 0;
 }

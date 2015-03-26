@@ -30,24 +30,19 @@ Scenario::Scenario(string gameDirectory):m_World(NULL),
                                          m_Battle(NULL)
 {
   string dir = gameDirectory;
-  saveDir = dir.append("saves/");
-  dir = gameDirectory;
-  creaDir = dir.append("creatures/");
-  dir = gameDirectory;
-  itemDir = dir.append("items/");
-  dir = gameDirectory;
-  mapsDir = dir.append("maps/");
+  saveDir = dir + "saves/";
+  creaDir = dir + "creatures/";
+  itemDir = dir + "items/";
+  mapsDir = dir + "maps/";
   
   ifstream input;
   input.open ("./src/config.txt", ios::in);
   string command, parameter;
   getline(input, command, '=');
-  while(input.good()){
+  while (input.good()){
     getline(input, parameter);
     istringstream is(parameter);
-    int number;
-    is >> number;
-    m_Options[command] = number;
+    is >> m_Options[command];
     getline(input, command, '=');
   }
   input.close();

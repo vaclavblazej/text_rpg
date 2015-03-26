@@ -13,9 +13,8 @@ Item::Item(string name, vector<t_Done> attrs)
             m_Ref(1),
             m_Attrs(attrs)
 {
-  for (vector<t_Done>::const_iterator it = m_Attrs.begin();
-       it != m_Attrs.end(); ++it){
-    m_Cost += (*it).second;
+  for (auto it = m_Attrs.begin(); it != m_Attrs.end(); ++it){
+    m_Cost += it->second;
   }
   m_Cost += 1;
 }
@@ -28,18 +27,16 @@ int  Item::GetCost() const
 void Item::GetInfo(int &hp) const
 {
   hp = 0;
-  for (vector<t_Done>::const_iterator it = m_Attrs.begin();
-       it != m_Attrs.end(); ++it){
-    if((*it).first == "health") hp = (*it).second;
+  for (auto it = m_Attrs.begin(); it != m_Attrs.end(); ++it){
+    if(it->first == "health") hp = it->second;
   }
 }
 //-----------------------------------------------------------------------GetInfo
 void Item::GetInfo(bool &range) const
 {
   range = false;
-  for (vector<t_Done>::const_iterator it = m_Attrs.begin();
-       it != m_Attrs.end(); ++it){
-    if((*it).first == "range") range = (*it).second;
+  for (auto it = m_Attrs.begin(); it != m_Attrs.end(); ++it){
+    if(it->first == "range") range = it->second;
   }
 }
 //-----------------------------------------------------------------------GetInfo
@@ -54,12 +51,11 @@ void Item::GetInfo(int &hp, int &str, int &agi, int &inl) const
   str = 0;
   agi = 0;
   inl = 0;
-  for (vector<t_Done>::const_iterator it = m_Attrs.begin();
-       it != m_Attrs.end(); ++it){
-    if((*it).first == "health"  ) hp  = (*it).second;
-    if((*it).first == "strength") str = (*it).second;
-    if((*it).first == "agility" ) agi = (*it).second;
-    if((*it).first == "intelect") inl = (*it).second;
+  for (auto it = m_Attrs.begin(); it != m_Attrs.end(); ++it){
+    if(it->first == "health"  ) hp  = it->second;
+    if(it->first == "strength") str = it->second;
+    if(it->first == "agility" ) agi = it->second;
+    if(it->first == "intelect") inl = it->second;
   }
 }
 //-----------------------------------------------------------------------GetInfo
@@ -70,13 +66,12 @@ void Item::GetInfo(int &hp, int &str, int &agi, int &inl, bool &range) const
   agi = 0;
   inl = 0;
   range = false;
-  for (vector<t_Done>::const_iterator it = m_Attrs.begin();
-       it != m_Attrs.end(); ++it){
-    if((*it).first == "health"  ) hp    = (*it).second;
-    if((*it).first == "strength") str   = (*it).second;
-    if((*it).first == "agility" ) agi   = (*it).second;
-    if((*it).first == "intelect") inl   = (*it).second;
-    if((*it).first == "range"   ) range = (*it).second;
+  for (auto it = m_Attrs.begin(); it != m_Attrs.end(); ++it){
+    if(it->first == "health"  ) hp    = it->second;
+    if(it->first == "strength") str   = it->second;
+    if(it->first == "agility" ) agi   = it->second;
+    if(it->first == "intelect") inl   = it->second;
+    if(it->first == "range"   ) range = it->second;
   }
 }
 //-------------------------------------------------------------------------Print
@@ -92,17 +87,9 @@ void Item::Print() const
 //------------------------------------------------------------------PrintCompact
 void Item::PrintCompact(int cost) const
 {
-  cout << showpos
-       << setw(10) << m_Name;
-       /*<< setw(2)  << m_Health   << " hp, "
-       << setw(2)  << m_Strength << " str, "
-       << setw(2)  << m_Agility  << " agi, "
-       << setw(2)  << m_Intelect << " int";
-  cout << endl;*/
-  for (vector<t_Done>::const_iterator it = m_Attrs.begin();
-       it != m_Attrs.end(); ++it){
-    cout << ", ";
-    cout << (*it).first << " " << (*it).second;
+  cout << showpos << setw(10) << m_Name;
+  for (auto it = m_Attrs.begin(); it != m_Attrs.end(); ++it){
+    cout << ", " << it->first << " " << it->second;
   }
   cout << noshowpos;
   if (cost) cout << ", "<< setw(2) << int(m_Cost*cost/100.) << " gold";
@@ -114,9 +101,8 @@ void Item::Save(ofstream &output) const
   output << m_Name << " "
          << m_Cost << " "
          << m_Attrs.size() << endl;
-  for (vector<t_Done>::const_iterator it = m_Attrs.begin();
-       it != m_Attrs.end(); ++it){
-    output << (*it).first << " " << (*it).second << endl;
+  for (auto it = m_Attrs.begin(); it != m_Attrs.end(); ++it){
+    output << it->first << " " << it->second << endl;
   }
 }
 //--------------------------------------------------------------------------Load

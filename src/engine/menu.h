@@ -31,12 +31,13 @@
 #define MENU
 #include <vector>
 #include <map>
+#include <string>
 class Expression;
 class Scenario;
 class ReturnVal;
 class Menu{
 public:
-  Menu(std::string gameDirectory, string menuDirectory);
+  Menu(std::string gameDirectory, std::string menuDirectory);
   ~Menu();
   bool Good() const;
   void Run(const char * commandFileName);
@@ -44,14 +45,14 @@ private:
   bool good;
   void Simmilar() const;
   void CommandList() const;
-  Expression *LoadMethod (string name, vector<Expression*> &atrs);
-  Expression* LoadFunction(istringstream & is, char &next, int &len, std::string &errMsg);
-  ReturnVal *Commands        (vector<Expression*> atr = vector<Expression*>());
-  ReturnVal *PrintFile       (vector<Expression*> atr = vector<Expression*>());
-  ReturnVal *LoadMenu        (vector<Expression*> atr = vector<Expression*>());
-  ReturnVal *LoadPushMenu    (vector<Expression*> atr = vector<Expression*>());
-  ReturnVal *ExitMenu        (vector<Expression*> atr = vector<Expression*>());
-  bool Reserved(string line);
+  Expression *LoadMethod (std::string name, std::vector<Expression*> &atrs);
+  Expression* LoadFunction(std::istringstream & is, char &next, int &len, std::string &errMsg);
+  ReturnVal *Commands     (std::vector<Expression*> atr = std::vector<Expression*>());
+  ReturnVal *PrintFile    (std::vector<Expression*> atr = std::vector<Expression*>());
+  ReturnVal *LoadMenu     (std::vector<Expression*> atr = std::vector<Expression*>());
+  ReturnVal *LoadPushMenu (std::vector<Expression*> atr = std::vector<Expression*>());
+  ReturnVal *ExitMenu     (std::vector<Expression*> atr = std::vector<Expression*>());
+  bool Reserved(std::string line);
   std::string PWD;
   std::string DIR;
   std::string MENU_DIR;

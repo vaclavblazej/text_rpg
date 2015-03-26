@@ -56,9 +56,8 @@ World::World(int width, int height, string creaDir, string itemDir)
     }
     file.close();
     // items
-    for (t_ItemBP::const_iterator it = itemBlueprints.begin();
-         it != itemBlueprints.end(); ++it){
-      delete (*it).second;
+    for (pair<string, ItemBP*> it : itemBlueprints){
+      delete it.second;
       cout << "ITEMSBP ERROR\n";
     }
     itemBlueprints.clear();
@@ -189,12 +188,12 @@ Item *World::CreateItem(string str)
   if (str == ""){
     t_ItemBP::iterator it = itemBlueprints.begin();
     advance(it, rand()%itemBlueprints.size());
-    return (*it).second->New();
-  }else{
+    return it->second->New();
+  } else {
     t_ItemBP::iterator it = itemBlueprints.find(str);
     if (it == itemBlueprints.end()){
       return new Item(str);
-    }else{
+    } else {
       return itemBlueprints[str]->New();
     }
   }
@@ -224,7 +223,7 @@ void World::AddMobs()
         if ((rand()%100 < 10) && creatureBlueprints.size()){
           Creature *crea = CreateMob(i, j, it-grid[i][j]->m_Area.begin());
           set<string>::iterator ii = m_Materials.begin();
-          advance(ii, rand()%m_Materials.size());
+          advance(ii, rand() % m_Materials.size());
           crea->GiveItem(CreateItem(*ii));
           crea->GiveItem(CreateItem());
           (*it)->AddCreature(crea);
@@ -236,15 +235,14 @@ void World::AddMobs()
   for (int i = 0; i < width; i++){
     for (int j = 0; j < height; j++){
       if (allCreatures.size() > 0){
-        for (std::vector <Area*>::iterator it  = grid[i][j]->m_Area.begin(),
-                                           end = grid[i][j]->m_Area.end();
-             it != end; ++it){
+	  	int id = 0;
+        for (Area* it : grid[i][j]->m_Area){
           if ((rand()%100 < 6) && creatureBlueprints.size()){
             Creature * goal = allCreatures[rand()%allCreatures.size()];
             int x, y, l;
             goal->GetInfo(x, y, l);
             Ally *ally = new Ally("Friend", i, j,
-                                  it-grid[i][j]->m_Area.begin(),
+                                  id++,
                                   !bool(rand()%3));
             for (int i = rand()%3+1; i >= 0; i--)
               ally->GiveItem(CreateItem());
@@ -254,7 +252,7 @@ void World::AddMobs()
               advance(ii, rand()%m_Materials.size());
               ally->GiveItem(CreateItem(*ii));
             }
-            (*it)->AddAlly(ally);
+            it->AddAlly(ally);
           }
         }
       }
@@ -280,7 +278,7 @@ void World::Stream(int begX, int begY, int endX, int endY){
         x += random()%3-1;
       else
         y += random()%3-1;
-    }else{
+    } else {
       if (midx > x)x+=1;
       else if (midx < x) x-=1;
       if (midy > y)y+=1;
@@ -297,7 +295,7 @@ void World::Stream(int begX, int begY, int endX, int endY){
         x += random()%3-1;
       else
         y += random()%3-1;
-    }else{
+    } else {
       if (endX > x)x+=1;
       else if (endX < x) x-=1;
       if (endY > y)y+=1;
@@ -341,44 +339,22 @@ void World::Paint(int X, int Y, bool color,
         if (res == 0){
           int ret = GetCode(i, j);
           switch (ret){
-          case -2:
-            cout << (color?"\033[0;31m":"") << '!';
-            break;
-          case -1:
-            cout << (color?"\033[0;31m":"") << 'x';
-            break;
-          case 0:
-            cout << (color?"\033[0;30m":"") << '#';
-            break;
-          case 1:
-            cout << (color?"\033[1;36m":"") << 'X';
-            break;
-          case 2:
-            cout << (color?"\033[1;37m":"") << '^';
-            break;
-          case 3:
-            cout << (color?"\033[1;33m":"") << 'A';
-            break;
-          case 4:
-            cout << (color?"\033[0;32m":"") << 'Z';
-            break;
-          case 5:
-            cout << (color?"\033[1;32m":"") << 'z';
-            break;
-          case 6:
-            cout << (color?"\033[0;36m":"") << '~';
-            break;
-          case 7:
-            cout << (color?"\033[0;34m":"") << '-';
-            break;
-          case 8:
-            cout << (color?"\033[0;35m":"") << 'S';
-            break;
+          case-2: cout << (color?"\033[0;31m":"") << '!'; break;
+          case-1: cout << (color?"\033[0;31m":"") << 'x'; break;
+          case 0: cout << (color?"\033[0;30m":"") << '#'; break;
+          case 1: cout << (color?"\033[1;36m":"") << 'X'; break;
+          case 2: cout << (color?"\033[1;37m":"") << '^'; break;
+          case 3: cout << (color?"\033[1;33m":"") << 'A'; break;
+          case 4: cout << (color?"\033[0;32m":"") << 'Z'; break;
+          case 5: cout << (color?"\033[1;32m":"") << 'z'; break;
+          case 6: cout << (color?"\033[0;36m":"") << '~'; break;
+          case 7: cout << (color?"\033[0;34m":"") << '-'; break;
+          case 8: cout << (color?"\033[0;35m":"") << 'S'; break;
           }
-        }else{
+        } else {
           cout << (color?"\033[0;31m":"") << res;
         }
-      }else{
+      } else {
         cout << (color?"\033[1;31m":"") << "&";
       }
     }

@@ -33,10 +33,10 @@
 
 class ReturnVal{
 public:
-  ReturnVal(int arg):ing(arg),str(""){}
-  ReturnVal(std::string arg):ing(2147483647),str(arg){}
-  int         getInt() const {return ing;}
-  std::string getStr() const {return str;}
+  ReturnVal(int arg);
+  ReturnVal(std::string arg);
+  int         getInt() const;
+  std::string getStr() const;
 private:
   int         ing;
   std::string str;

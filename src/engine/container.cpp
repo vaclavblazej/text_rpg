@@ -16,15 +16,15 @@ Container::Container(World *world, Creature *player)
 //--------------------------------------------------------------------~Container
 Container::~Container()
 {
-  for (vector <Quest*>::const_iterator it = m_Quests.begin();
-       it != m_Quests.end(); ++it) delete *it;
+  for (auto it = m_Quests.begin(); it != m_Quests.end(); ++it) {
+  	delete *it;
+  }
 }
 //-------------------------------------------------------------------CheckQuests
 int Container::Check()
 {
   int count = 0;
-  for (vector <Quest*>::iterator it = m_Quests.begin();
-       it != m_Quests.end(); ++it){
+  for (auto it = m_Quests.begin(); it != m_Quests.end(); ++it){
     if ((*it)->Check() == 0){
       delete *it;
       m_Quests.erase(it--);
@@ -37,9 +37,8 @@ int Container::Check()
 //-------------------------------------------------------------------------Print
 void Container::Print(std::ostream &os) const
 {
-  for (vector <Quest*>::const_iterator it = m_Quests.begin();
-       it != m_Quests.end(); ++it){
-    (*it)->Print(os);
+  for (auto it : m_Quests){
+    it->Print(os);
   }
 }
 //--------------------------------------------------------------------GetChanges
@@ -48,12 +47,10 @@ t_ChangeArr &Container::GetChanges()
   if (!m_Active){
     int x, y;
     m_Changes.clear();
-    for (vector <Quest*>::const_iterator it = m_Quests.begin();
-         it != m_Quests.end(); ++it){
-      (*it)->GetMark(x, y);
+    for (Quest* it : m_Quests){
+      it->GetMark(x, y);
       m_Changes[x][y] = '?';
     }
-    //cout << "actualize" << endl;
     m_Active = true;
   }
   return m_Changes;
@@ -67,8 +64,7 @@ void Container::AddQuest(Quest *quest)
 //----------------------------------------------------------------------RemQuest
 void Container::RemQuest(Quest *quest)
 {
-  for (vector <Quest*>::iterator it = m_Quests.begin();
-       it != m_Quests.end(); ++it){
+  for (auto it = m_Quests.begin(); it != m_Quests.end(); ++it){
     if (&quest == &(*it)){
       delete *it;
       m_Active = false;
@@ -80,17 +76,15 @@ void Container::RemQuest(Quest *quest)
 void Container::Save(ofstream &output) const
 {
   output << m_Quests.size() << endl;
-  for (vector <Quest*>::const_iterator it = m_Quests.begin();
-       it != m_Quests.end(); ++it){
-    (*it)->Save(output);
+  for (Quest* it : m_Quests){
+    it->Save(output);
   }
 }
 //--------------------------------------------------------------------------Load
 void Container::Load(ifstream &input)
 {
   m_Active = false;
-  for (vector <Quest*>::const_iterator it = m_Quests.begin();
-       it != m_Quests.end(); ++it) delete *it;
+  for (Quest* it : m_Quests) delete it;
   m_Quests.clear();
   int c_Quests;
   string line;

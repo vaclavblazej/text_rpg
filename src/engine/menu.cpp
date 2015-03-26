@@ -25,11 +25,11 @@ Menu::Menu(string gameDirectory, string menuDirectory):good(true){
   
   ifstream input;
   input.open (file.c_str(), ios::in);
-  getline(input, tmp, ';');
-  while(input.good()){
+  while (input.good()){
+    getline(input, tmp, ';');
+    if (!input.good()) break;
     getline(input, line, '=');
     expressions[line];
-    getline(input, tmp, ';');
   }
   input.close();
   input.clear();
@@ -74,7 +74,7 @@ Menu::Menu(string gameDirectory, string menuDirectory):good(true){
     if (!skip && result != NULL){
       expressions[line] = result;
       expressions[line]->Create();
-    }else{
+    } else {
       good = false;
       len--;
       cout << "> mistake in macro syntax! (" << errMsg << ")" << endl;
@@ -184,10 +184,10 @@ void Menu::Run(const char * commandFileName){
   string line;
   vector <Expression*> arg;
   arg.push_back(new Word(commandFileName));
-	delete LoadPushMenu(arg);//commandFileName
-	delete arg[0];
-	arg.clear();
-	if (expressions["init"]) delete expressions["init"]->getValue();
+  delete LoadPushMenu(arg);//commandFileName
+  delete arg[0];
+  arg.clear();
+  if (expressions["init"]) delete expressions["init"]->getValue();
   bool b_Repeat = true;
   int found;
   while (b_Repeat){
@@ -198,9 +198,9 @@ void Menu::Run(const char * commandFileName){
     if (line != ""){
       for (map<string, Expression*>::iterator it = alias.begin();
            it != alias.end(); ++it){
-        if ((*it).first == line){
+        if (it->first == line){
           found = 0;
-          if(alias[line] != NULL) delete alias[line]->getValue();
+          if (alias[line] != NULL) delete alias[line]->getValue();
           else found = 2;
           break;
         }
@@ -208,9 +208,9 @@ void Menu::Run(const char * commandFileName){
       if (found == 1){
         cout << "command not known"  << endl;
         Simmilar();
-    	}else if (found == 2){
+      } else if (found == 2){
         cout << "ERROR: macro not defined"  << endl;
-    	}
+      }
     }
   }
   if (cin.eof()) cout << "quit" << endl;
@@ -422,15 +422,4 @@ bool Menu::Reserved(string line)
       (line == "repeat")) return true;
   return false;
 }
-
-
-
-
-
-
-
-
-
-
-
 
