@@ -27,8 +27,7 @@
  * \return Uložený řetězec nebo výchozí hodnota.
  */
 
-#ifndef RETURN_VAL
-#define RETURN_VAL
+#pragma once
 #include <string>
 
 class ReturnVal{
@@ -42,4 +41,3 @@ private:
   std::string str;
 };
 
-#endif /*RETURN_VAL*/
